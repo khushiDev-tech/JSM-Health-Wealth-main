@@ -1,0 +1,1815 @@
+/* ===============================
+   GLOBAL STYLES
+=================================*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    background-color: #fff;
+    font-family: "Open Sans", sans-serif;
+    color: #444;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   SECTION WRAPPER
+========================= */
+.sip-section {
+     background: #f4f6f9;
+    padding: 20px 0;   /* reduced top-bottom space */
+}
+
+/* Remove container side gap */
+.sip-section .container {
+    display: flex;
+    align-items: stretch;
+
+    max-width: 1200px;
+}
+
+/* Remove bootstrap row margin */
+.sip-section .row {
+    margin: 0;
+    background: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    min-height: auto;   /* removed fixed height */
+}
+
+/* =========================
+   LEFT IMAGE
+========================= */
+.sip-image-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.sip-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* =========================
+   RIGHT CONTENT
+========================= */
+
+.sip-content {
+    padding: 20px 30px;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+/* Small Top Heading */
+.sip-subtitle {
+    font-size: 35px;
+    font-weight: 600;
+    color: #174c3c;
+    margin: 0 0 12px 0;
+    letter-spacing: 1px;
+}
+
+/* Main Title */
+.sip-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0 0 15px 0;
+    color: #111;
+}
+
+/* Short Description Line */
+.sip-title-2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0 0 18px 0;
+    color: #444;
+}
+
+/* =========================
+   DESCRIPTION PARAGRAPHS
+========================= */
+.sip-description {
+    margin: 0 0 22px 0;
+}
+
+.sip-description p {
+    margin: 0 0 6px 0;
+    font-size: 15px;
+    color: #555;
+}
+
+/* =========================
+   BENEFITS LIST
+========================= */
+.sip-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.sip-benefits li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #222;
+}
+
+/* Green Tick */
+.sip-benefits li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #174c3c;
+    font-weight: bold;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.sip-btn {
+    display: inline-block;
+    padding: 10px 26px;
+    background: #174c3c;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.sip-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 991px) {
+
+    .sip-content {
+        padding: 30px 25px;
+    }
+
+    .sip-title {
+        font-size: 18px;
+    }
+
+    .sip-subtitle {
+        font-size: 28px;
+    }
+}
+
+/* =========================
+   ABOUT PLAN SECTION
+========================= */
+.about-plan-section{
+     font-family: "Open Sans", sans-serif;
+    padding:30px 0;
+    background: linear-gradient(135deg, #f7fcfa, #eef9f6);
+}
+
+/* Center Heading */
+.about-plan-title{
+    font-size:35px;
+    font-weight:700;
+    color:#174c3c;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+/* Text */
+.about-plan-text{
+    font-size:17px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* List */
+.plan-benefits{
+    list-style:none;
+    padding:0;
+    margin:25px 0;
+}
+
+.plan-benefits li{
+    font-size:17px;
+    margin-bottom:14px;
+    padding-left:28px;
+    position:relative;
+    color:#333;
+}
+
+.plan-benefits li::before{
+    content:"✔";
+    position:absolute;
+    left:0;
+    top:0;
+    color:#174c3c;
+    font-weight:bold;
+}
+
+/* Image */
+.plan-image-wrapper{
+    text-align:center;
+}
+
+
+.plan-image-wrapper img{
+    width: 100%;
+    max-height: 350px;   /* 🔥 height kam kar di */
+    object-fit: contain; /* image cut nahi hogi */
+    display: block;
+    border-radius:20px;
+     box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:991px){
+    .about-plan-title{
+    font-size: 38px;
+        margin-bottom:40px;
+    }
+}
+
+@media(max-width:768px){
+
+    .about-plan-section{
+        padding:60px 0;
+    }
+
+    .about-plan-text{
+        font-size:16px;
+    }
+
+    .plan-benefits li{
+        font-size:16px;
+    }
+
+    /* Image top on mobile */
+    .plan-image-wrapper{
+        margin-bottom:30px;
+    }
+}
+
+.feature-section {
+    background: #f3f4f6;
+    padding: 50px 0;
+}
+
+.feature-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px 20px;
+    position: relative;
+    height: 100%;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.05);
+    transition: 0.4s ease;
+    overflow: hidden;
+}
+
+/* Single red top line */
+.feature-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: #174c3c;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+
+.feature-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.feature-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.feature-title {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #111827;
+    line-height: 1.3;
+}
+
+.feature-text {
+    text-align: center;
+    font-size: 16px;
+    color: #5f6b7a;
+    line-height: 1.9;
+}
+
+@media (max-width: 991px) {
+    .feature-card {
+        margin-bottom: 30px;
+    }
+}
+
+/* smart Section */
+.smart-section {
+     background-color: #eef3f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.smart-section h2 {
+     font-family: "Open Sans", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    color: #0c2b2b;
+}
+
+/* Grid */
+.smart-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Card */
+.smart-card {
+    background: #f5f7f6;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: 0.4s ease;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.smart-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.smart-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* Icon Circle */
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background: #dde4ec;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #355c7d;
+}
+
+/* Title */
+.smart-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #0c2b2b;
+}
+
+/* Text */
+.smart-card p {
+    font-size: 16px;
+    color: #516b6b;
+    line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .smart-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .smart-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .smart-section h2 {
+               font-size: 38px;
+    }
+}
+
+
+/* Parallax Section */
+.smart-hero {
+    margin-bottom: 60px;
+    position: relative;
+    background: linear-gradient(rgba(22, 22, 23, 0.85), rgba(10,25,60,0.85)),
+                url("static/image/pms.jpg") center/cover no-repeat fixed;
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Optional: smoother parallax for mobile */
+@media (max-width: 768px) {
+    .smart-hero {
+        background-attachment: scroll;
+    }
+}
+
+/* Lightning Icon */
+.smart-hero .icon {
+    font-size: 40px;
+    color: #2ecc71;
+    margin-bottom: 25px;
+}
+
+/* Main Heading */
+.smart-hero h1 {
+    font-size: 38px;
+    font-weight: 700;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.3;
+}
+
+/* Description */
+.smart-hero p {
+    font-size: 20px;
+    max-width: 900px;
+    margin: 30px auto 0;
+    line-height: 1.8;
+    color: #e6e6e6;
+}
+
+/* ==========================
+   FAQ SECTION
+========================== */
+.faq-section{
+     font-family: "Open Sans", sans-serif;
+    background:#f5f6f7;
+    padding:40px 0;
+}
+
+.faq-title{
+    font-size:34px;
+    color: #111;
+    font-weight:700;
+    /* margin-bottom:50px; */
+}
+
+/* Accordion Item */
+.accordion-item{
+    border:none;
+    margin-bottom:20px;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* Accordion Button */
+.accordion-button{
+    background:#e9ecef;
+    font-weight:600;
+    font-size:18px;
+    padding:20px 25px;
+    position:relative;
+}
+
+/* Remove default bootstrap arrow */
+.accordion-button::after{
+    display:none;
+}
+
+/* Custom Icon Box */
+.accordion-button .icon-boxs{
+    position:absolute;
+    right:0;
+    top:0;
+    height:100%;
+    width:60px;
+    background:#174c3c;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:18px;
+    transition:0.3s ease;
+}
+
+/* Icon rotate when open */
+.accordion-button:not(.collapsed) .icon-boxs i{
+    transform:rotate(180deg);
+}
+
+/* Smooth transition */
+.icon-boxs i{
+    transition:0.3s ease;
+}
+
+/* Accordion Body */
+.accordion-body{
+    background:#f8f9fa;
+    font-size:16px;
+    line-height:1.8;
+}
+
+/* ==========================
+   LARGE SCREEN (1400px+)
+========================== */
+
+@media (min-width:1400px){
+    .faq-section{
+        padding:100px 0;
+    }
+}
+
+
+/* ==========================
+   TABLET (992px - 1199px)
+========================== */
+
+@media (max-width:1199px){
+
+    .faq-title{
+        font-size:30px;
+    }
+
+    .accordion-button{
+        font-size:17px;
+    }
+}
+
+
+/* ==========================
+   SMALL TABLET (768px - 991px)
+========================== */
+
+@media (max-width:991px){
+
+    .faq-section{
+        padding:60px 0;
+    }
+
+    .faq-title{
+        font-size:26px;
+    }
+
+    .accordion-button{
+        font-size:16px;
+        padding:18px 60px 18px 20px;
+    }
+
+    .accordion-button .icon-boxs{
+        width:55px;
+    }
+}
+
+
+/* ==========================
+   MOBILE (Below 768px)
+========================== */
+
+@media (max-width:768px){
+
+    .faq-section{
+        padding:50px 15px;
+    }
+
+    .faq-title{
+        font-size:24px;
+    }
+
+    .accordion-item{
+        margin-bottom:15px;
+    }
+
+    .accordion-button{
+        font-size:15px;
+        padding:16px 55px 16px 15px;
+    }
+
+    .accordion-button .icon-boxs{
+        width:50px;
+        font-size:16px;
+    }
+
+    .accordion-body{
+        font-size:14px;
+        padding:18px 15px;
+    }
+}
+
+
+/* ==========================
+   SMALL MOBILE (480px)
+========================== */
+
+@media (max-width:480px){
+
+    .faq-title{
+        font-size:20px;
+    }
+
+    .accordion-button{
+        font-size:14px;
+        padding:14px 50px 14px 12px;
+    }
+
+    .accordion-button .icon-boxs{
+        width:45px;
+        font-size:14px;
+    }
+
+    .accordion-body{
+        font-size:13px;
+    }
+}
+
+
+ .sip-section-2 {
+   background: linear-gradient(rgba(22, 22, 23, 0.6), rgba(10, 25, 60, 0.6)),
+                url("static/image/contact.jpg") center/cover no-repeat fixed;
+   
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 3rem; */
+    
+  }
+
+  .sip-container-2 {
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    max-width: 500px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .sip-container-2 h2 {
+        font-size: 37px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .sip-container-2 .sip-subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #fff;
+    opacity: 0.9;
+  }
+
+  .sip-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .sip-form input,
+  .sip-form select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+  }
+
+  .sip-form input:focus,
+  .sip-form select:focus {
+    outline: none;
+  }
+
+  .sip-form button {
+    margin-top: 10px;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #174c3c;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .sip-form button:hover {
+    background-color: #c62828;
+  }
+
+  .sip-contact {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  .sip-contact strong {
+    font-weight: 600;
+  }
+
+  /* Responsive */
+  @media (max-width: 480px) {
+    .sip-container h2 {
+      font-size: 20px;
+    }
+
+    .sip-container-2 .sip-subtitle-2 {
+      font-size: 13px;
+    }
+  }
+
+/* designed */
+ .designed-section{
+    padding:50px 0;
+    background: linear-gradient(135deg, #ffffff, #f7fbfa, #eef7f4);
+  }
+
+  .top-description{
+     font-family: "Open Sans", sans-serif;
+    font-size:18px;
+    color:#444;
+    max-width:850px;
+    margin:0 auto 50px auto;
+    line-height:1.7;
+  }
+
+  .designed-title{
+      font-family: "Open Sans", sans-serif;
+    font-size:30px;
+    font-weight:700;
+    color:#174c3c;
+    margin-bottom:40px;
+  }
+
+  .designed-card{
+    /* background:#f1f3f2; */
+    padding:30px 35px;
+    border-radius:20px;
+    transition:0.3s ease;
+    height:100%;
+  }
+
+  .designed-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+  }
+
+  .icons-box{
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#e3f0ec;
+    color:#174c3c;
+    font-size:20px;
+    flex-shrink:0;
+  }
+
+  .card-text{
+      font-family: "Open Sans", sans-serif;
+    font-size:16px;
+    font-weight:500;
+    color:#2d2d2d;
+    margin:0;
+  }
+
+  /* service */
+
+
+.services {
+    font-family: "Open Sans", sans-serif;
+     background: #f5f7fa;
+  color: #1f2937;
+  padding: 30px 0;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  /* margin-bottom: 12px; */
+}
+
+.title-underline {
+ width: 60px;
+  height: 5px;
+  background: #174c3c;
+  border-radius: 4px;
+  margin: 15px auto 60px auto; /* This centers it */
+}
+
+
+/* =========================
+   GRID LAYOUT
+========================= */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 60px 40px;
+}
+
+/* =========================
+   SERVICE ITEM
+========================= */
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  transition: 0.3s ease;
+}
+
+/* =========================
+   DIAMOND ICON BOX
+========================= */
+/* .icon-box {
+  width: 85px;
+  height: 85px;
+  background: #22c55e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  flex-shrink: 0;
+  transition: 0.4s ease;
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.25);
+}
+
+.icon-box i {
+  color: #ffffff;
+  font-size: 28px;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+} */
+
+/* =========================
+   TEXT STYLING
+========================= */
+.service-item h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #6b7280;
+  max-width: 350px;
+}
+
+/* =========================
+   HOVER EFFECT
+========================= */
+/* .service-item:hover .icon-box {
+  background: #16a34a;
+  transform: rotate(45deg) scale(1.08);
+  box-shadow: 0 15px 35px rgba(34, 197, 94, 0.4);
+}
+
+.service-item:hover .icon-box i {
+  transform: rotate(-45deg) scale(1.1);
+} */
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .service-item {
+    gap: 18px;
+  }
+
+  .icon-box {
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon-box i {
+    font-size: 22px;
+  }
+}
+
+/* images inverstment */
+.disclaimer-container{
+    background: linear-gradient(135deg,#dff3fb,#eaf8ff);
+    font-family: "Open Sans", sans-serif;
+}
+
+    .main-headings{
+         font-family: "Open Sans", sans-serif;
+         /* background:#f4f7fa; */
+      font-size:42px;
+      font-weight:700;
+      color:#0b1f2a;
+    }
+
+    /* .image-container{ */
+      /* background: linear-gradient(135deg,#dff3fb,#eaf8ff); */
+      /* border-radius:25px; */
+      /* padding:30px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08); */
+    
+
+    .image-container img{
+      width:100%;
+      border-radius:15px;
+    }
+
+    .disclaimer-icon{
+    color:#dc3545;
+    font-size:16px;
+}
+
+/* Who Should Invest */
+
+     .who-invest-section{
+         font-family: "Open Sans", sans-serif;
+    /* background: linear-gradient(135deg,#f0f9ff,#e6f4ff); */
+     background: #f5f7fa;
+    padding: 30px 0;
+  }
+
+  .who-invest-title{
+    margin-bottom: 1rem;
+    font-size: 36px;
+    font-weight: 700;
+    color: #0b1f2a;
+  }
+
+  .who-invest-subtitle{
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+
+  .invest-card{
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+  }
+
+  .invest-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+  }
+
+  .check-icon{
+    color:#174c3c;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  /* =========================
+   RESPONSIVE
+========================= */
+
+/* Tablets */
+@media (max-width: 992px){
+    .who-invest-section{
+        padding: 50px 20px;
+    }
+
+    .who-invest-title{
+        font-size: 30px;
+    }
+
+    .who-invest-subtitle{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .invest-card{
+        margin-bottom: 25px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+    .who-invest-section{
+        padding: 40px 15px;
+    }
+
+    .who-invest-title{
+        font-size: 26px;
+    }
+
+    .who-invest-subtitle{
+        font-size: 15px;
+    }
+
+    .invest-card{
+        padding: 20px;
+    }
+
+    .check-icon{
+        font-size: 18px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+    .who-invest-title{
+        font-size: 22px;
+    }
+
+    .who-invest-subtitle{
+        font-size: 14px;
+    }
+
+    .invest-card{
+        padding: 18px;
+    }
+}
+
+/* =========================
+   PLAN SECTION
+========================= */
+
+.plan-section{
+    font-family: "Open Sans", sans-serif;
+    padding:80px 0;
+    background: linear-gradient(135deg, #f6fbf9, #eef8f5, #e6f4f0);
+}
+
+.section-title{
+    font-size:36px;
+    font-weight:700;
+    color:#0b1f2a;
+    text-align:center;
+    margin-bottom:60px;
+}
+
+/* =========================
+   PLAN CARD
+========================= */
+
+.plan-card{
+    
+    background:#fff;
+    border-radius:20px;
+    padding:35px 30px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    transition:0.3s ease;
+    height:100%;
+    text-align:center;   /* Center all content */
+}
+
+.plan-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   ICON ALIGNMENT FIX
+========================= */
+
+.plan-icon{
+    font-size:42px;
+    margin-bottom:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Icon Colors */
+.wealth-icon{ color:#0d6efd; }
+.future-icon{ color:#174c3c; }
+.family-icon{ color:#e11d48; }
+
+/* =========================
+   TEXT STYLING
+========================= */
+
+.plan-title{
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.plan-card ul{
+    list-style:none;
+    padding:0;
+    margin:0 auto;
+    display:inline-block;   /* important */
+    text-align:left;        /* keep icon + text aligned */
+}
+
+.plan-card ul li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:12px;
+    font-size:16px;
+}
+
+/* Check Icon */
+.check{
+    color:#174c3c;
+    margin-right:0;  /* remove extra margin */
+}
+
+/* Highlight Text */
+.highlight{
+    font-weight:600;
+    color:#e11d48;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Large Tablets */
+@media (max-width: 992px){
+    .plan-section{
+        padding:60px 20px;
+    }
+
+    .section-title{
+        font-size:30px;
+        margin-bottom:40px;
+    }
+
+    .plan-card{
+        padding:30px 25px;
+        margin-bottom:30px;
+    }
+
+    .plan-title{
+        font-size:22px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+    .plan-section{
+        padding:50px 15px;
+    }
+
+    .section-title{
+        font-size:26px;
+    }
+
+    .plan-icon{
+        font-size:36px;
+    }
+
+    .plan-title{
+        font-size:20px;
+    }
+
+    .plan-card ul li{
+        font-size:15px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+    .section-title{
+        font-size:22px;
+    }
+
+    .plan-card{
+        padding:25px 20px;
+    }
+
+    .plan-icon{
+        font-size:32px;
+    }
+
+    .plan-title{
+        font-size:18px;
+    }
+
+    .plan-card ul li{
+        font-size:14px;
+    }
+}
+/* ===========================
+   SECTION BACKGROUND
+=========================== */
+
+ /* Section */
+.policy-section{
+    background:#eef3ef;
+    padding:60px 20px;
+}
+
+/* Title */
+.policy-title{
+    text-align:center;
+    font-size:36px;
+    font-weight:700;
+    margin-bottom:30px;
+}
+
+/* Card */
+.policy-card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+    max-width:900px;
+    margin:auto;
+}
+
+/* Row */
+.policy-row{
+    display:flex;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.policy-row:last-child{
+    border-bottom:none;
+}
+
+/* Label */
+.policy-label{
+    width:40%;
+    padding:18px 25px;
+    background:#f7f7f7;
+    font-weight:600;
+}
+
+/* Value */
+.policy-value{
+    width:60%;
+    padding:18px 25px;
+    color:#555;
+}
+
+/* Tablet Responsive */
+@media (max-width: 992px){
+
+.policy-title{
+    font-size:30px;
+}
+
+.policy-label,
+.policy-value{
+    padding:16px 20px;
+}
+
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px){
+
+.policy-row{
+    flex-direction:column;
+}
+
+.policy-label{
+    width:100%;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.policy-value{
+    width:100%;
+}
+
+}
+
+/* Small Mobile */
+@media (max-width:480px){
+
+.policy-section{
+    padding:40px 15px;
+}
+
+.policy-title{
+    font-size:24px;
+}
+
+.policy-label,
+.policy-value{
+    padding:14px 16px;
+    font-size:14px;
+}
+
+}
+
+/* =========================
+   ULIP WRAPPER
+========================= */
+
+.ulip{
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+/* =========================
+   STICKY NAV
+========================= */
+
+.ulip-nav-section{
+  position: sticky;
+  top: 100px;   /* header height */
+  z-index: 999;
+  background:#fff;
+  width:100%;
+  border-bottom:1px solid #eee;
+}
+
+/* Nav Wrapper */
+.ulip-nav-wrapper{
+  display:flex;
+  align-items:center;
+  gap:5px;
+  padding:10px 0;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.ulip-links{
+  display:flex;
+  gap:18px;
+  overflow-x:auto;
+  scroll-behavior:smooth;
+  flex:1;
+  padding:0 10px;
+}
+
+/* Hide scrollbar */
+
+.ulip-links::-webkit-scrollbar{
+  display:none;
+}
+
+.ulip-links{
+  scrollbar-width:none;
+}
+
+/* Nav Links */
+
+.ulip-links a{
+  flex:0 0 auto;
+  padding:10px 14px;
+  text-decoration:none;
+  color:#333;
+  font-size:17px;
+  font-weight:500;
+  border-bottom:2px solid transparent;
+  white-space:nowrap;
+  transition:.3s;
+}
+
+.ulip-links a:hover{
+  color:#174c3c;
+}
+
+.ulip-links a.active{
+  color:#174c3c;
+  font-weight:600;
+  border-bottom:2px solid #174c3c;
+}
+
+/* =========================
+   ARROWS
+========================= */
+
+.nav-arrow{
+  font-size:20px;
+  cursor:pointer;
+  padding:6px 12px;
+  color:#333;
+  transition:.3s;
+  flex-shrink:0;
+}
+
+.nav-arrow:hover{
+  color:#174c3c;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width:991px){
+
+  .ulip-nav-section{
+    top:70px;
+  }
+
+  .ulip-links{
+    gap:14px;
+  }
+
+  .ulip-links a{
+    font-size:15px;
+    padding:8px 12px;
+  }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+  .ulip-nav-section{
+    top:65px;
+  }
+
+  .ulip-nav-wrapper{
+padding: 36px 8px 0px 0px;
+  }
+
+  .ulip-links{
+    gap:10px;
+    padding:0 6px;
+  }
+
+  .ulip-links a{
+    font-size:14px;
+    padding:7px 10px;
+  }
+
+  .nav-arrow{
+    font-size:18px;
+    padding:5px 8px;
+  }
+
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width:480px){
+
+  .ulip-nav-section{
+    top:60px;
+  }
+
+}
+
+/* =========================
+   CONTENT SECTION DESIGN
+========================= */
+/* #features {
+  scroll-margin-top: 90px;
+} */
+
+.content-section {
+    padding: 50px 0;
+}
+
+.content-section:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.content-box {
+    max-width: 850px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+    text-align: left;   /* 🔥 important fix */
+}
+
+/* Heading center */
+.content-section h2 {
+    font-size: 34px;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content-section h5 {
+     font-weight: 600;
+    font-size: 18px;
+    color: #000;
+    margin-top: 25px;
+}
+
+/* Paragraph left aligned */
+.content-section p {
+   font-size: 16px;
+    line-height: 1.4;
+    color: #555;
+}
+
+/* List styling */
+.content-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.content-section li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Divider center */
+.divider {
+    width: 60px;
+    height: 3px;
+    background: #174c3c;
+    margin: 15px auto 30px;
+    border-radius: 3px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Large Screens */
+@media (max-width: 1200px) {
+    .content-box {
+        max-width: 90%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .content-section {
+        padding: 50px 20px;
+    }
+
+    .content-box {
+        padding: 30px;
+    }
+
+    .content-section h2 {
+        font-size: 28px;
+    }
+
+    .content-section p {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .content-section {
+        padding: 40px 15px;
+    }
+
+    .content-box {
+        padding: 25px 20px;
+    }
+
+    .content-section h2 {
+        font-size: 24px;
+    }
+
+    .content-section h5 {
+        font-size: 18px;
+    }
+
+    .content-section p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .content-section li {
+        font-size: 15px;
+    }
+
+    .divider {
+        margin: 10px auto 25px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .content-section h2 {
+        font-size: 20px;
+    }
+
+    .content-box {
+        padding: 20px 15px;
+    }
+
+    .content-section p,
+    .content-section li {
+        font-size: 14px;
+    }
+}
+
+html {
+    scroll-padding-top: 120px;   /* adjust if navbar height different */
+}
+
+
+
+/* =========================
+        UNIQUE CTA SECTION
+========================= */
+
+.ulip-cta-unique{
+    position:relative;
+    background:url('static/image/health-insurance.jpg') center center / cover no-repeat;
+    padding:60px 20px;
+    color:#fff;
+    text-align:center;
+}
+
+/* Dark Overlay */
+
+.ulip-cta-unique::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.7);
+    z-index:0;
+}
+
+/* CTA Card */
+
+.cta-card{
+    position:relative;
+    max-width:900px;
+    width:100%;
+    margin:auto;
+    text-align:center;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    padding:40px 30px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.1);
+    color:#fff;
+    box-shadow:0 25px 60px rgba(0,0,0,0.4);
+}
+
+/* Heading */
+
+.cta-card h2{
+    font-size:36px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+/* Paragraph */
+
+.cta-card p{
+    font-size:18px;
+    line-height:1.8;
+    color:rgba(255,255,255,0.85);
+    margin-bottom:35px;
+}
+
+/* Buttons Wrapper */
+
+.cta-actions{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* Primary Button */
+
+.cta-btn-primary{
+    background:#174c3c;
+    color:#fff;
+    padding:14px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.4s ease;
+    display:inline-block;
+}
+
+/* Hover */
+
+.cta-btn-primary:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(23,76,60,0.4);
+}
+
+/* ======================
+Tablet
+====================== */
+
+@media (max-width:768px){
+
+.ulip-cta-unique{
+    padding:50px 20px;
+}
+
+.cta-card{
+    padding:30px 22px;
+}
+
+.cta-card h2{
+    font-size:26px;
+}
+
+.cta-card p{
+    font-size:16px;
+}
+
+.cta-btn-primary{
+    padding:12px 28px;
+    font-size:15px;
+}
+
+}
+
+/* ======================
+Mobile
+====================== */
+
+@media (max-width:576px){
+
+.ulip-cta-unique{
+    padding:40px 15px;
+}
+
+.cta-card{
+    padding:25px 18px;
+    border-radius:16px;
+}
+
+.cta-card h2{
+    font-size:22px;
+    line-height:1.4;
+}
+
+.cta-card p{
+    font-size:15px;
+    line-height:1.6;
+}
+
+.cta-actions{
+    flex-direction:column;
+    align-items:center;
+}
+
+.cta-btn-primary{
+    width:100%;
+    max-width:240px;
+    padding:12px 20px;
+    font-size:14px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
