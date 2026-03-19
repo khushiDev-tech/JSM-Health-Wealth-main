@@ -45,13 +45,17 @@ function changeSlide() {
 
 setInterval(changeSlide, 3000);
 
-    const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
+  const toggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
 
+  const dropdown = document.querySelector(".dropdown");
+  dropdown.addEventListener("click", function() {
+    this.classList.toggle("active");
+  });
 
 
 
