@@ -15,20 +15,16 @@ const header = () => {
       <div class="social-icoons">
         <span class="me-2">Follow Us On:</span>
         <a href="#finance-section">
-        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-linkedin-in"></i>
     </a>
 
-    <a href="#finance-section">
-        <i class="fab fa-x-twitter"></i>
-    </a>
+  
 
     <a href="#finance-section">
         <i class="fab fa-instagram"></i>
     </a>
 
-    <a href="#finance-section">
-        <i class="fab fa-pinterest-p"></i>
-    </a>
+  
       </div>
     </div>
   </div>

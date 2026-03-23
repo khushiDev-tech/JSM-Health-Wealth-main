@@ -39,7 +39,118 @@
     color: #c40000;
     border-color: #c40000;
 }
+/* WhatsApp Button */
+.whatsapp-btn{
+    text-decoration: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 999;
+    transition: 0.3s;
+}
 
+.whatsapp-btn:hover{
+    transform: scale(1.1);
+}
+
+/* Scroll Top Button */
+.scroll-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    background: #0B6A68;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    transition: 0.3s;
+}
+
+.scroll-top:hover{
+    background: #e67e00;
+    transform: translateY(-3px);
+}
+/* ===================================
+   RESPONSIVE FLOATING BUTTONS
+=================================== */
+
+/* Tablet */
+@media (max-width: 991px){
+
+    .whatsapp-btn{
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
+        right: 15px;
+        bottom: 80px;
+    }
+
+    .scroll-top{
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        right: 15px;
+        bottom: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+    .whatsapp-btn{
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+        right: 12px;
+        bottom: 75px;
+    }
+
+    .scroll-top{
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+        right: 12px;
+        bottom: 15px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+
+    .whatsapp-btn{
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        right: 10px;
+        bottom: 130px;
+    }
+
+    .scroll-top{
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        right: 10px;
+        bottom: 12px;
+        border-radius: 8px;
+    }
+}
 </style>
     </head>
 
@@ -47,13 +158,15 @@
 
         <!-- ---------------------------Static/Js/Header.js-------------------------------- -->
         <header class="header" id="main-header"></header>
-        <!-- <div class="container mt-2">
-    <div class="d-flex justify-content-end">
-        <button id="langToggle" onclick="toggleLanguage()" class="btn btn-outline-primary lang-btn">
-            View in Hindi
-        </button>
-    </div>
-</div> -->
+   <!-- WhatsApp Button -->
+<a href="https://wa.me/919999999999" class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Scroll To Top Button -->
+<button class="scroll-top" id="scrollTopBtn">
+    <i class="fa fa-arrow-up"></i>
+</button>
 
         <!-- ------------------------Header Ends Here-------------------------------------- -->
 
@@ -263,137 +376,141 @@
             </section>
 
             <!-- card section -->
-<section class="services-section py-3" id="services-section">
-    <div class="container">
+            <section class="services-section py-3" id="services-section">
+                <div class="container">
 
-        <!-- Main Heading -->
-        <div class="text-center">
-            <h2 class="main-heading">
-                JSM Wealth Services
-            </h2>
-        </div>
-
-        <div class="text-center mb-3">
-            <div class="top-heading">
-                <span></span>
-                Access a wide range of financial products under one
-                window with online transaction facility
-                <span></span>
-            </div>
-        </div>
-
-        <!-- Cards -->
-        <div class="row g-4">
-
-            <!-- Card 1 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card">
-                    <div class="card-header-flex">
-                        <div class="icon-box">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h4>SIP, SWP, Lumpsum, STP</h4>
+                    <!-- Main Heading -->
+                    <div class="text-center">
+                        <h2 class="main-heading">
+                            JSM Wealth Services
+                        </h2>
                     </div>
-                    <p>
-                        Flexible investment options designed to help
-                        you grow wealth systematically and efficiently.
-                    </p>
-                </div>
-            </div>
 
-            <!-- Card 2 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card">
-                    <div class="card-header-flex">
-                        <div class="icon-box">
-                            <i class="fas fa-hand-holding-dollar"></i>
+                    <div class="text-center mb-3">
+                        <div class="top-heading">
+                            <span></span>
+                            Access a wide range of financial products under one
+                            window with online transaction facility
+                            <span></span>
                         </div>
-                        <h4>Loan Against MF</h4>
                     </div>
-                    <p>
-                        Get instant liquidity without redeeming your
-                        mutual fund investments.
-                    </p>
-                </div>
-            </div>
 
-            <!-- Card 3 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card">
-                    <div class="card-header-flex">
-                        <div class="icon-box">
-                            <i class="fas fa-arrow-trend-up"></i>
-                        </div>
-                        <h4>Equity & ETFs</h4>
-                    </div>
-                    <p>
-                        Diversified equity and ETF investment
-                        solutions for long-term capital growth.
-                    </p>
-                </div>
-            </div>
+                    <!-- Cards -->
+                    <div class="row g-4">
 
-            <!-- Card 4 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card">
-                    <div class="card-header-flex">
-                        <div class="icon-box">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <h4>Portfolio Management Services (PMS)</h4>
-                    </div>
-                    <p>
-                        Professional portfolio management tailored
-                        to your financial goals.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card">
-                    <div class="card-header-flex">
-                        <div class="icon-box">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h4>National Pension Scheme</h4>
-                    </div>
-                    <p>
-                        Secure your retirement with government-backed
-                        pension planning solutions.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card">
-                    <div class="card-header-flex">
-                        <div class="icon-box">
-                            <div class="icon-box">
-                                <i class="fas fa-percent"></i>
+                        <!-- Card 1 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card">
+                                <div class="card-header-flex">
+                                    <div class="icon-box">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <h4>SIP, SWP, Lumpsum, STP</h4>
+                                </div>
+                                <p>
+                                    Flexible investment options designed to help
+                                    you grow wealth systematically and
+                                    efficiently.
+                                </p>
                             </div>
                         </div>
-                        <h4>Fixed Deposit and Bonds</h4>
+
+                        <!-- Card 2 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card">
+                                <div class="card-header-flex">
+                                    <div class="icon-box">
+                                        <i
+                                            class="fas fa-hand-holding-dollar"></i>
+                                    </div>
+                                    <h4>Loan Against MF</h4>
+                                </div>
+                                <p>
+                                    Get instant liquidity without redeeming your
+                                    mutual fund investments.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card">
+                                <div class="card-header-flex">
+                                    <div class="icon-box">
+                                        <i class="fas fa-arrow-trend-up"></i>
+                                    </div>
+                                    <h4>Equity & ETFs</h4>
+                                </div>
+                                <p>
+                                    Diversified equity and ETF investment
+                                    solutions for long-term capital growth.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card">
+                                <div class="card-header-flex">
+                                    <div class="icon-box">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <h4>Portfolio Management Services (PMS)</h4>
+                                </div>
+                                <p>
+                                    Professional portfolio management tailored
+                                    to your financial goals.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card">
+                                <div class="card-header-flex">
+                                    <div class="icon-box">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <h4>National Pension Scheme</h4>
+                                </div>
+                                <p>
+                                    Secure your retirement with
+                                    government-backed
+                                    pension planning solutions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card">
+                                <div class="card-header-flex">
+                                    <div class="icon-box">
+                                        <div class="icon-box">
+                                            <i class="fas fa-percent"></i>
+                                        </div>
+                                    </div>
+                                    <h4>Fixed Deposit and Bonds</h4>
+                                </div>
+                                <p>
+                                    Stable and secure investment instruments
+                                    offering predictable returns.
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
-                    <p>
-                        Stable and secure investment instruments
-                        offering predictable returns.
-                    </p>
+
+                    <!-- CTA LINE -->
+                    <div class="text-center mt-5">
+                        <p class="service-cta">
+                            Interested? <a href="#finance-section">Let’s
+                                connect.</a>
+                        </p>
+                    </div>
+
                 </div>
-            </div>
-
-        </div>
-
-        <!-- CTA LINE -->
-        <div class="text-center mt-5">
-            <p class="service-cta">
-                Interested? <a href="#finance-section">Let’s connect.</a>
-            </p>
-        </div>
-
-    </div>
-</section>
+            </section>
             <section class="services-section py-3" id="services-sections">
                 <div class="container">
 
@@ -520,18 +637,19 @@
 
                     </div>
                     <!-- CTA LINE -->
-        <div class="text-center mt-5">
-            <p class="service-cta">
-                Interested? <a href="#finance-section">Let’s connect.</a>
-            </p>
-        </div>
+                    <div class="text-center mt-5">
+                        <p class="service-cta">
+                            Interested? <a href="#finance-section">Let’s
+                                connect.</a>
+                        </p>
+                    </div>
 
                 </div>
             </section>
 
             <section class="finance-hero">
 
-                <div class="overlay"></div>
+                <div class="overlays"></div>
 
                 <div class="hero-content">
 
@@ -556,9 +674,6 @@
                 </div>
 
             </section>
-    
-
-
 
             <section class="stats">
 
@@ -647,7 +762,7 @@
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="team-card">
                                 <div class="team-img">
-                                    <img src="static/image/father shuchi.jpeg"
+                                    <img src="static/image/father.png"
                                         alt>
 
                                 </div>
@@ -746,8 +861,6 @@
                         </div>
                     </div>
                 </section>
-
-
 
                 <section class="finance-section py-5" id="finance-section">
                     <div class="container">
@@ -885,7 +998,7 @@
                                     <div class="insta-grid">
                                         <div class="insta-item">
                                             <img
-                                                src="static/image/slide-2.avif">
+                                                src="static/image/advantages.jpg">
                                             <div class="overlay"><i
                                                     class="fab fa-instagram insta-icon"></i></div>
                                         </div>
@@ -940,9 +1053,11 @@
 
                                     <!-- Buttons -->
                                     <div class="insta-buttons">
-                                        <a href="#finance-section" class="btn load-btn">Know
+                                        <a href="#finance-section"
+                                            class="btn load-btn">Know
                                             More</a>
-                                        <a href="https://www.instagram.com/jsm_advisor"
+                                        <a
+                                            href="https://www.instagram.com/jsm_advisor"
                                             class="btn follow-btn">Follow</a>
                                     </div>
 
@@ -1010,26 +1125,24 @@ window.addEventListener('scroll', () => {
   }
 });
 </script>
-                <script>
-function googleTranslateElementInit() {
-    new google.translate.TranslateElement(
-        {pageLanguage: 'en'},
-        'google_translate_element'
-    );
-}
+<script>
+const scrollBtn = document.getElementById("scrollTopBtn");
 
-function translateToHindi() {
-    setLang('hi');
-}
+window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = "flex";
+    } else {
+        scrollBtn.style.display = "none";
+    }
+};
 
-function translateToEnglish() {
-    setLang('en');
-}
-
-function setLang(lang) {
-    document.cookie = "googtrans=/en/" + lang;
-    location.reload();
-}</script>
+scrollBtn.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
+</script>
                 <script
                     src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
