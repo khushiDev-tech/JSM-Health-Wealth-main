@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -17,7 +18,49 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="static/css/footer.css">
    <style>
-   
+   /* .lang-toggle {
+  display: flex;
+  gap: 5px;
+}
+
+.lang-toggle button {
+  border: none;
+  padding: 6px 12px;
+  background: #ddd;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.lang-toggle button.active {
+  background: #6fb1b0;
+  color: #fff;
+} */
+.lang-btn {
+  position: absolute;
+     top: 35px;
+    right: 46px;
+  background: #ffffff;
+  color: #1f3b6d;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.lang-btn:hover {
+  background: #0B6A68;
+  color: #fff;
+}
+
+.hi {
+  display: none;
+}
     
 </style>
   </head>
@@ -78,8 +121,15 @@
         </ul>
 
         <a href="#sip-section-2" class="btn-quote">GET A QUOTE</a>
+        <button onclick="toggleLang()" class="lang-btn">
+  हिंदी में देखें
+</button>
       </div>
     </nav>
+<!-- <div class="lang-toggle">
+  <button id="btn-en" class="active">EN</button>
+  <button id="btn-hi">हिंदी</button>
+</div> -->
 
 
 
@@ -88,1276 +138,1558 @@
     <!-- ----------------------------------------------------------------------------------------------------------------------- -->
 
     <section class="sip-section">
-      <div class="container p-0">
-        <div class="row g-0 align-items-stretch">
-          <!-- LEFT IMAGE -->
-          <div class="col-lg-6 d-flex align-items-center">
-            <div class="sip-content">
-              <!-- Main Heading -->
-              <h1 class="sip-subtitle">SMART SIP 360 by Tata AIA</h1>
+  <div class="container p-0">
+    <div class="row g-0 align-items-stretch">
 
-              <!-- Tagline -->
-              <h3 class="sip-title">
-                Build Wealth, Protect Family, Create Future Income.
-              </h3>
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6 d-flex align-items-center">
+        <div class="sip-content">
 
-              <!-- Short Description Heading -->
-              <p class="sip-title-2">
-                A market-linked investment plan that gives you life cover of up
-                to
-                <strong>360X your SIP amount.</strong>
-              </p>
+          <!-- Main Heading -->
+          <h1 class="sip-subtitle">
+            <span class="en">SMART SIP 360 by Tata AIA</span>
+            <span class="hi">SMART SIP 360 by Tata AIA</span>
+          </h1>
 
-              <!-- Description Points -->
-              <div class="sip-description">
-                <p>Invest regularly like a SIP.</p>
-                <p>Enjoy market-linked growth.</p>
-                <p>Secure your family with powerful life protection.</p>
-              </div>
+          <!-- Tagline -->
+          <h3 class="sip-title">
+            <span class="en">Build Wealth, Protect Family, Create Future Income.</span>
+            <span class="hi">धन बनाएं, परिवार को सुरक्षित रखें, भविष्य की आय बनाएं।</span>
+          </h3>
 
-              <!-- Benefits -->
-              <ul class="sip-benefits">
-                <li>100% Tax-free maturity amount</li>
-                <li>Tax-Free Growth</li>
-                <li>Inbuilt Life Cover</li>
-                <li>Smart Withdrawal Options</li>
-              </ul>
+          <!-- Short Description -->
+          <p class="sip-title-2">
+            <span class="en">
+              A market-linked investment plan that gives you life cover of up to 
+              <strong>360X your SIP amount.</strong>
+            </span>
+            <span class="hi">
+              एक मार्केट-लिंक्ड निवेश योजना जो आपको 
+              <strong>आपकी SIP राशि का 360 गुना</strong> जीवन कवर देती है।
+            </span>
+          </p>
 
-              <!-- Button -->
-              <a href="#sip-section-2" class="sip-btn">
-                Know More – Get Personalized Plan
-              </a>
-            </div>
-          </div>
-
-          <!-- RIGHT CONTENT -->
-          <div class="col-lg-6">
-            <div class="sip-image-wrapper">
-              <img src="static/image/sip2.jpg" alt="Investment Plan" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-plan-section">
-      <div class="container">
-        <!-- Center Heading Row -->
-        <div class="row">
-          <div class="col-12">
-            <h2 class="about-plan-title">What is SMART SIP 360 ?</h2>
-          </div>
-        </div>
-
-        <!-- Content Row -->
-        <div class="row align-items-center">
-          <!-- Left Image -->
-          <div class="col-lg-6 plan-image-wrapper">
-            <img src="static/image/111111 1.jpeg" alt="Investment Plan" />
-          </div>
-
-          <!-- Right Content -->
-          <div class="col-lg-6">
-            <p class="about-plan-text">
-              SMART SIP 360 is a Unit Linked Insurance Plan (ULIP) that
-              combines:
+          <!-- Description Points -->
+          <div class="sip-description">
+            <p>
+              <span class="en">Invest regularly like a SIP.</span>
+              <span class="hi">SIP की तरह नियमित निवेश करें।</span>
             </p>
-
-            <ul class="plan-benefits">
-              <li><strong>Wealth creation</strong></li>
-              <li><strong>Life insurance protection</strong></li>
-              <li><strong>Goal-based planning</strong></li>
-              <li><strong>Second income strategy</strong></li>
-            </ul>
-
-            <p class="about-plan-text">
-              You can invest monthly like a SIP, and your premium is invested in
-              market-linked funds while your family gets life cover protection.
+            <p>
+              <span class="en">Enjoy market-linked growth.</span>
+              <span class="hi">मार्केट से जुड़ी ग्रोथ का लाभ उठाएं।</span>
+            </p>
+            <p>
+              <span class="en">Secure your family with powerful life protection.</span>
+              <span class="hi">मजबूत जीवन सुरक्षा के साथ अपने परिवार को सुरक्षित करें।</span>
             </p>
           </div>
+
+          <!-- Benefits -->
+          <ul class="sip-benefits">
+            <li>
+              <span class="en">100% Tax-free maturity amount</span>
+              <span class="hi">100% टैक्स-फ्री मैच्योरिटी राशि</span>
+            </li>
+            <li>
+              <span class="en">Tax-Free Growth</span>
+              <span class="hi">टैक्स-फ्री ग्रोथ</span>
+            </li>
+            <li>
+              <span class="en">Inbuilt Life Cover</span>
+              <span class="hi">इनबिल्ट जीवन बीमा कवर</span>
+            </li>
+            <li>
+              <span class="en">Smart Withdrawal Options</span>
+              <span class="hi">स्मार्ट निकासी विकल्प</span>
+            </li>
+          </ul>
+
+          <!-- Button -->
+          <a href="#sip-section-2" class="sip-btn">
+            <span class="en">Know More – Get Personalized Plan</span>
+            <span class="hi">और जानें – अपना पर्सनल प्लान प्राप्त करें</span>
+          </a>
+
         </div>
       </div>
-    </section>
+
+      <!-- RIGHT IMAGE -->
+      <div class="col-lg-6">
+        <div class="sip-image-wrapper">
+          <img src="static/image/sip2.jpg" alt="Investment Plan" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <section class="about-plan-section">
+  <div class="container">
+
+    <!-- Center Heading Row -->
+    <div class="row">
+      <div class="col-12">
+        <h2 class="about-plan-title">
+          <span class="en">What is SMART SIP 360 ?</span>
+          <span class="hi">SMART SIP 360 क्या है?</span>
+        </h2>
+      </div>
+    </div>
+
+    <!-- Content Row -->
+    <div class="row align-items-center">
+
+      <!-- Left Image -->
+      <div class="col-lg-6 plan-image-wrapper">
+        <img src="static/image/111111 1.jpeg" alt="Investment Plan" />
+      </div>
+
+      <!-- Right Content -->
+      <div class="col-lg-6">
+
+        <p class="about-plan-text">
+          <span class="en">
+            SMART SIP 360 is a Unit Linked Insurance Plan (ULIP) that combines:
+          </span>
+          <span class="hi">
+            SMART SIP 360 एक यूनिट लिंक्ड इंश्योरेंस प्लान (ULIP) है जो निम्न को जोड़ता है:
+          </span>
+        </p>
+
+        <ul class="plan-benefits">
+          <li>
+            <strong>
+              <span class="en">Wealth creation</span>
+              <span class="hi">धन निर्माण</span>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <span class="en">Life insurance protection</span>
+              <span class="hi">जीवन बीमा सुरक्षा</span>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <span class="en">Goal-based planning</span>
+              <span class="hi">लक्ष्य आधारित योजना</span>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <span class="en">Second income strategy</span>
+              <span class="hi">दूसरी आय की रणनीति</span>
+            </strong>
+          </li>
+        </ul>
+
+        <p class="about-plan-text">
+          <span class="en">
+            You can invest monthly like a SIP, and your premium is invested in
+            market-linked funds while your family gets life cover protection.
+          </span>
+          <span class="hi">
+            आप SIP की तरह हर महीने निवेश कर सकते हैं, और आपका प्रीमियम
+            मार्केट-लिंक्ड फंड्स में निवेश होता है जबकि आपके परिवार को जीवन बीमा सुरक्षा मिलती है।
+          </span>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- ----------------------Experience Box Wrapper---------------------------------------------------------------------- -->
-    <section class="feature-section">
-      <div class="container">
-        <div class="row g-4">
-          <!-- Card 1 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <img
-                  src="static/image/Wealth Creation.png"
-                  alt="Wealth Creation"
-                />
-              </div>
-              <h3 class="feature-title">Wealth Creation</h3>
-              <p class="feature-text">
-                Grow your money with market-linked returns through disciplined
-                SIP investing.
-              </p>
-            </div>
+   <section class="feature-section">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="static/image/Wealth Creation.png" alt="Wealth Creation" />
           </div>
 
-          <!-- Card 2 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <img
-                  src="static/image/Life Insurance.png"
-                  alt="Life Insurance Protection"
-                />
-              </div>
-              <h3 class="feature-title">Life Insurance Protection</h3>
-              <p class="feature-text">
-                Inbuilt life cover secures your family – in life and beyond.
-              </p>
-            </div>
-          </div>
+          <h3 class="feature-title">
+            <span class="en">Wealth Creation</span>
+            <span class="hi">धन निर्माण</span>
+          </h3>
 
-          <!-- Card 3 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <img
-                  src="static/image/Goal-Based.png"
-                  alt="Goal Based Planning"
-                />
-              </div>
-              <h3 class="feature-title">Goal-Based Planning</h3>
-              <p class="feature-text">
-                Align your investments to specific goals — education,
-                retirement, home, or legacy.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <img
-                  src="static/image/Strategy.png"
-                  alt="Second Income Strategy"
-                />
-              </div>
-              <h3 class="feature-title">Second Income Strategy</h3>
-              <p class="feature-text">
-                Create a future tax-free income stream through smart partial
-                withdrawal strategies.
-              </p>
-            </div>
-          </div>
+          <p class="feature-text">
+            <span class="en">
+              Grow your money with market-linked returns through disciplined SIP investing.
+            </span>
+            <span class="hi">
+              अनुशासित SIP निवेश के माध्यम से मार्केट-लिंक्ड रिटर्न के साथ अपना धन बढ़ाएं।
+            </span>
+          </p>
         </div>
       </div>
-    </section>
+
+      <!-- Card 2 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="static/image/Life Insurance.png" alt="Life Insurance Protection" />
+          </div>
+
+          <h3 class="feature-title">
+            <span class="en">Life Insurance Protection</span>
+            <span class="hi">जीवन बीमा सुरक्षा</span>
+          </h3>
+
+          <p class="feature-text">
+            <span class="en">
+              Inbuilt life cover secures your family – in life and beyond.
+            </span>
+            <span class="hi">
+              इनबिल्ट जीवन बीमा कवर आपके परिवार को जीवन में और उसके बाद भी सुरक्षित रखता है।
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="static/image/Goal-Based.png" alt="Goal Based Planning" />
+          </div>
+
+          <h3 class="feature-title">
+            <span class="en">Goal-Based Planning</span>
+            <span class="hi">लक्ष्य आधारित योजना</span>
+          </h3>
+
+          <p class="feature-text">
+            <span class="en">
+              Align your investments to specific goals — education, retirement, home, or legacy.
+            </span>
+            <span class="hi">
+              अपने निवेश को विशेष लक्ष्यों के अनुसार व्यवस्थित करें — शिक्षा, रिटायरमेंट, घर या विरासत।
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="static/image/Strategy.png" alt="Second Income Strategy" />
+          </div>
+
+          <h3 class="feature-title">
+            <span class="en">Second Income Strategy</span>
+            <span class="hi">दूसरी आय की रणनीति</span>
+          </h3>
+
+          <p class="feature-text">
+            <span class="en">
+              Create a future tax-free income stream through smart partial withdrawal strategies.
+            </span>
+            <span class="hi">
+              स्मार्ट आंशिक निकासी रणनीतियों के माध्यम से भविष्य के लिए टैक्स-फ्री आय का स्रोत बनाएं।
+            </span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <!-- --------------------------------------------------------------------------------------------------------------------- -->
 
-    <section class="smart-section">
-      <h2>Why SMART SIP 360 is Powerful?</h2>
+   <section class="smart-section">
 
-      <div class="smart-grid">
-        <div class="smart-card">
-          <div class="icon-box">
-            <i class="fa-solid fa-shield-halved"></i>
-          </div>
-          <h3>Life Cover up to 360X</h3>
-          <p>
-            Example: ₹20,000 monthly SIP = ₹72 Lakhs life cover to protect your
-            loved ones.
-          </p>
-        </div>
+  <h2>
+    <span class="en">Why SMART SIP 360 is Powerful?</span>
+    <span class="hi">SMART SIP 360 क्यों शक्तिशाली है?</span>
+  </h2>
 
-        <div class="smart-card">
-          <div class="icon-box">
-            <i class="fa-solid fa-landmark"></i>
-          </div>
-          <h3>100% Tax-Free Structure</h3>
-          <p>
-            Zero LTCG (as per applicable policy structure & limits). Tax-free
-            maturity (subject to prevailing tax laws).
-          </p>
-        </div>
+  <div class="smart-grid">
 
-        <div class="smart-card">
-          <div class="icon-box">
-            <i class="fa-solid fa-hand-holding-dollar"></i>
-          </div>
-          <h3>Smart Partial Withdrawals</h3>
-          <p>After lock-in, you can generate systematic income.</p>
-        </div>
-
-        <div class="smart-card">
-          <div class="icon-box">
-            <i class="fa-regular fa-heart"></i>
-          </div>
-          <h3>Waiver of Premium Benefit</h3>
-          <p>
-            In selected options, future premiums are paid by the company in case
-            of unfortunate events.
-          </p>
-        </div>
-
-        <div class="smart-card">
-          <div class="icon-box">
-            <i class="fa-solid fa-user-group"></i>
-          </div>
-          <h3>Women Empowerment Benefits</h3>
-          <p>
-            Additional allocation benefits for female policyholders (as
-            applicable).
-          </p>
-        </div>
-        <div class="smart-card">
-          <div class="icon-box">
-            <i class="fa-solid fa-chart-line"></i>
-          </div>
-          <h3>Long-Term Wealth Creation</h3>
-          <p>
-            Stay invested systematically to benefit from market-linked growth
-            potential while enjoying the advantage of disciplined investing
-            through regular SIP contributions.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="plan-section">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="section-title">Choose Your Plan Option</h2>
-        </div>
-
-        <div class="row g-4">
-          <!-- Wealth Secure -->
-          <div class="col-md-6 col-lg-6">
-            <div class="plan-card text-center">
-              <div class="plan-icon wealth-icon">
-                <i class="fa-solid fa-sack-dollar"></i>
-              </div>
-
-              <h3 class="plan-title">Wealth Secure</h3>
-
-              <ul class="text-start">
-                <li>
-                  <i class="fa-solid fa-circle-check check"></i>
-                  Focus on wealth creation
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check check"></i>
-                  Death benefit + policy ends
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check check"></i>
-                  <span class="highlight">100% Maturity Corpus</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Future Secure -->
-          <div class="col-md-6 col-lg-6">
-            <div class="plan-card text-center">
-              <div class="plan-icon future-icon">
-                <i class="fa-solid fa-shield-heart"></i>
-              </div>
-
-              <h3 class="plan-title">Future Secure</h3>
-
-              <ul class="text-start">
-                <li>
-                  <i class="fa-solid fa-circle-check check"></i>
-                  Focus on wealth creation + receive life insurance
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check check"></i>
-                  Death benefit – Policy continues
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check check"></i>
-                  Maturity Benefit equal to FV paid to the nominee
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check check"></i>
-                  <span class="highlight"
-                    >100% Maturity Corpus + 360X life insurance cover
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container-fluid py-5 disclaimer-container">
-      <!-- Heading -->
-      <div class="text-center mb-4">
-        <h1 class="main-headings">Investment Illustration</h1>
+    <!-- Card 1 -->
+    <div class="smart-card">
+      <div class="icon-box">
+        <i class="fa-solid fa-shield-halved"></i>
       </div>
 
-      <!-- Image Section -->
-      <div class="image-container text-center mb-3 container">
-        <img
-          src="static/image/InvestmentIllust.jpg"
-          alt="Investment Illustration"
-          class="img-fluid rounded shadow"
-        />
-      </div>
-
-      <!-- Disclaimer -->
-      <div class="disclaimer-box text-center">
-        <i class="fa-solid fa-triangle-exclamation disclaimer-icon"></i>
-        <strong>Disclaimer:</strong> Returns are market-linked and not
-        guaranteed. Investment risk is borne by the policyholder.
-      </div>
-    </section>
-
-    <section class="feature-section">
-      <div class="text-center">
-        <h2 class="who-invest-title">Who Should Invest ?</h2>
-        <p class="who-invest-subtitle">SMART SIP 360 is ideal for:</p>
-      </div>
-      <div class="container">
-        <div class="row g-4">
-          <!-- Card 1 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <img
-                  src="static/image/Professionals.png"
-                  alt="Salaried Professionals"
-                />
-              </div>
-              <h3 class="feature-title">Salaried Professionals</h3>
-              <p class="feature-text">looking to build long-term wealth.</p>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <img
-                  src="static/image/Business Owners.png"
-                  alt="Business Owners"
-                />
-              </div>
-              <h3 class="feature-title">Business Owners</h3>
-              <p class="feature-text">
-                planning tax-efficient financial growth.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <img
-                  src="static/image/Parents.png"
-                  alt="Parents"
-                />
-              </div>
-              <h3 class="feature-title">Parents</h3>
-              <p class="feature-text">planning for their child’s education.</p>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <img
-                  src="static/image/individuals.png"
-                  alt="Retirement"
-                />
-              </div>
-              <h3 class="feature-title">Individuals</h3>
-              <p class="feature-text">preparing for retirement.</p>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <img
-                  src="static/image/NRIs.png"
-                  alt="NRIs"
-                />
-              </div>
-              <h3 class="feature-title">NRIs</h3>
-              <p class="feature-text">
-                seeking tax-efficient wealth creation in India
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <img
-                  src="static/image/Housewives.png"
-                  alt="Housewives"
-                />
-              </div>
-              <h3 class="feature-title">Housewives / Homemakers</h3>
-              <p class="feature-text">looking to create financial security</p>
-            </div>
-          </div>
-
-          <!-- Card 7 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <img
-                  src="static/image/Grandparents.png"
-                  alt="Grandparents"
-                />
-              </div>
-              <h3 class="feature-title">Grandparents</h3>
-              <p class="feature-text">
-                planning a financial gift for their grandchildren
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 8 -->
-          <!-- Card 8 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <img
-                  src="static/image/Anyone.png"
-                  alt="Money Wealth"
-                />
-              </div>
-              <h3 class="feature-title">
-                Anyone seeking tax-free wealth creation with protection
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="policy-section">
-      <div class="policy-container">
-        <h2 class="policy-title">Plan Details</h2>
-
-        <div class="policy-card">
-          <div class="policy-row">
-            <div class="policy-label">Entry Age</div>
-            <div class="policy-value">18 – 50 years</div>
-          </div>
-
-          <div class="policy-row">
-            <div class="policy-label">Premium Options</div>
-            <div class="policy-value">₹2,000 – ₹20,000 per month</div>
-          </div>
-
-          <div class="policy-row">
-            <div class="policy-label">Premium Payment Term</div>
-            <div class="policy-value">10 – 50 years</div>
-          </div>
-
-          <div class="policy-row">
-            <div class="policy-label">Life Cover Multiple</div>
-            <div class="policy-value">
-              Up to 360X (subject to age & plan option)
-            </div>
-          </div>
-
-          <div class="policy-row">
-            <div class="policy-label">Fund Options</div>
-            <div class="policy-value">
-              Multiple fund choices across equity, debt & balanced
-            </div>
-          </div>
-
-          <div class="policy-row">
-            <div class="policy-label">Partial Withdrawal</div>
-            <div class="policy-value">Allowed after 5 policy years</div>
-          </div>
-
-          <div class="policy-row">
-            <div class="policy-label">Tax Benefit</div>
-            <div class="policy-value">
-              Section 80C (premiums) & 10 (10D) (maturity)
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="services">
-      <div class="container">
-        <h2 class="section-title">Why Invest Through Us?</h2>
-        <div class="title-underline"></div>
-
-        <div class="services-grid">
-          <div class="service-item">
-            <div class="icon-box">
-              <i class="fa-solid fa-bullseye"></i>
-            </div>
-            <div>
-              <h3>Personalized Goal Planning</h3>
-              <p>Custom plans aligned to your unique financial goals.</p>
-            </div>
-          </div>
-
-          <div class="service-item">
-            <div class="icon-box">
-              <i class="fa-solid fa-chart-line"></i>
-            </div>
-            <div>
-              <h3>Custom Return Illustration</h3>
-              <p>See projected returns tailored to your investment.</p>
-            </div>
-          </div>
-
-          <div class="service-item">
-            <div class="icon-box">
-              <i class="fa-solid fa-file-circle-check"></i>
-            </div>
-            <div>
-              <h3>Claim Assistance</h3>
-              <p>End-to-end support for hassle-free claims.</p>
-            </div>
-          </div>
-
-          <div class="service-item">
-            <div class="icon-box">
-              <i class="fa-solid fa-chart-pie"></i>
-            </div>
-            <div>
-              <h3>Long-Term Portfolio Monitoring</h3>
-              <p>Ongoing reviews and rebalancing for optimal growth.</p>
-            </div>
-          </div>
-
-          <div class="service-item">
-            <div class="icon-box">
-              <i class="fa-solid fa-headset"></i>
-            </div>
-            <div>
-              <h3>Dedicated Support</h3>
-              <p>A dedicated advisor for all your queries.</p>
-            </div>
-          </div>
-
-          <div class="service-item">
-            <div class="icon-box">
-              <i class="fa-solid fa-shield-halved"></i>
-            </div>
-            <div>
-              <h3>Financial Risk Protection</h3>
-              <p>
-                Comprehensive strategies to safeguard your wealth against
-                uncertainties.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="smart-hero">
-      <!-- <div class="icon"><i class="fa-solid fa-bolt"></i></div> -->
-
-      <h1>SMART SIP 360 = Investment + Insurance</h1>
+      <h3>
+        <span class="en">Life Cover up to 360X</span>
+        <span class="hi">360 गुना तक जीवन कवर</span>
+      </h3>
 
       <p>
-        ULIPs combine life insurance with market-linked investments. Premiums
-        split between coverage and funds (equity, debt, or hybrid) based on
-        risk. They offer flexible, long-term wealth creation and 100% tax-free
-        maturity for goals like child's education or retirement.
+        <span class="en">
+          Example: ₹20,000 monthly SIP = ₹72 Lakhs life cover to protect your loved ones.
+        </span>
+        <span class="hi">
+          उदाहरण: ₹20,000 मासिक SIP = ₹72 लाख का जीवन कवर, जो आपके प्रियजनों की सुरक्षा करता है।
+        </span>
       </p>
-    </section>
+    </div>
 
-    <section class="faq-section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="faq-title">Frequently Asked Questions</h2>
-            <div class="title-underline"></div>
+    <!-- Card 2 -->
+    <div class="smart-card">
+      <div class="icon-box">
+        <i class="fa-solid fa-landmark"></i>
+      </div>
 
-            <div class="accordion text-start" id="faqAccordion">
-              <!-- 1 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#faq1"
-                  >
-                    How is this different from a regular SIP in mutual funds?
-                    <span class="icon-boxs"
-                      ><i class="fa-solid fa-chevron-down"></i
-                    ></span>
-                  </button>
-                </h2>
-                <div
-                  id="faq1"
-                  class="accordion-collapse collapse show"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div class="accordion-body">
-                    Unlike mutual fund SIPs, SMART SIP 360 provides inbuilt life
-                    insurance cover, tax-free maturity, and waiver of premium
-                    benefit — making it a comprehensive financial solution.
-                  </div>
-                </div>
-              </div>
+      <h3>
+        <span class="en">100% Tax-Free Structure</span>
+        <span class="hi">100% टैक्स-फ्री संरचना</span>
+      </h3>
 
-              <!-- 2 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#faq2"
-                  >
-                    Who is eligible to buy this plan?
-                    <span class="icon-boxs"
-                      ><i class="fa-solid fa-chevron-down"></i
-                    ></span>
-                  </button>
-                </h2>
-                <div
-                  id="faq2"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div class="accordion-body">
-                    Anyone aged 18 to 50 years can purchase this plan. Minors
-                    can be covered through parent proposals.
-                  </div>
-                </div>
-              </div>
+      <p>
+        <span class="en">
+          Zero LTCG (as per applicable policy structure & limits). Tax-free maturity (subject to prevailing tax laws).
+        </span>
+        <span class="hi">
+          शून्य LTCG (लागू पॉलिसी संरचना और सीमाओं के अनुसार)। टैक्स-फ्री मैच्योरिटी (वर्तमान टैक्स कानूनों के अनुसार)।
+        </span>
+      </p>
+    </div>
 
-              <!-- 3 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#faq3"
-                  >
-                    What is the Waiver of Premium benefit?
-                    <span class="icon-boxs"
-                      ><i class="fa-solid fa-chevron-down"></i
-                    ></span>
-                  </button>
-                </h2>
-                <div
-                  id="faq3"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div class="accordion-body">
-                    If the policyholder passes away during the premium payment
-                    term, all future premiums are waived by the insurance
-                    company. The policy continues for the benefit of the family.
-                  </div>
-                </div>
-              </div>
+    <!-- Card 3 -->
+    <div class="smart-card">
+      <div class="icon-box">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+      </div>
 
-              <!-- 4 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#faq4"
-                  >
-                    What happens if I miss a premium?
-                    <span class="icon-boxs"
-                      ><i class="fa-solid fa-chevron-down"></i
-                    ></span>
-                  </button>
-                </h2>
-                <div
-                  id="faq4"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div class="accordion-body">
-                    There is a grace period. If premiums remain unpaid, the
-                    policy may convert to paid-up or discontinued status. We
-                    recommend setting up auto-debit to avoid lapses.
-                  </div>
-                </div>
-              </div>
+      <h3>
+        <span class="en">Smart Partial Withdrawals</span>
+        <span class="hi">स्मार्ट आंशिक निकासी</span>
+      </h3>
 
-              <!-- 5 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#faq5"
-                  >
-                    Can I withdraw money before maturity?
-                    <span class="icon-boxs"
-                      ><i class="fa-solid fa-chevron-down"></i
-                    ></span>
-                  </button>
-                </h2>
-                <div
-                  id="faq5"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div class="accordion-body">
-                    Yes, partial withdrawals are allowed after 5 completed
-                    policy years, subject to terms and conditions.
-                  </div>
-                </div>
-              </div>
+      <p>
+        <span class="en">After lock-in, you can generate systematic income.</span>
+        <span class="hi">लॉक-इन के बाद, आप नियमित आय उत्पन्न कर सकते हैं।</span>
+      </p>
+    </div>
 
-              <!-- 6 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#faq6"
-                  >
-                    What are the tax benefits?
-                    <span class="icon-boxs"
-                      ><i class="fa-solid fa-chevron-down"></i
-                    ></span>
-                  </button>
-                </h2>
-                <div
-                  id="faq6"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div class="accordion-body">
-                    Premiums qualify for deduction under Section 80C, and
-                    maturity proceeds are tax-free under Section 10(10D),
-                    subject to applicable conditions.
-                  </div>
-                </div>
-              </div>
+    <!-- Card 4 -->
+    <div class="smart-card">
+      <div class="icon-box">
+        <i class="fa-regular fa-heart"></i>
+      </div>
 
-              <!-- 7 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#faq7"
-                  >
-                    Is SMART SIP 360 safe?
-                    <span class="icon-boxs"
-                      ><i class="fa-solid fa-chevron-down"></i
-                    ></span>
-                  </button>
-                </h2>
-                <div
-                  id="faq7"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div class="accordion-body">
-                    Like all market-linked plans, returns depend on fund
-                    performance. However, the life cover component guarantees
-                    protection for your family.
-                  </div>
-                </div>
-              </div>
+      <h3>
+        <span class="en">Waiver of Premium Benefit</span>
+        <span class="hi">प्रीमियम माफी लाभ</span>
+      </h3>
 
-              <!-- 8 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#faq8"
-                  >
-                    What is SMART SIP 360?
-                    <span class="icon-boxs"
-                      ><i class="fa-solid fa-chevron-down"></i
-                    ></span>
-                  </button>
-                </h2>
-                <div
-                  id="faq8"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div class="accordion-body">
-                    SMART SIP 360 is a ULIP (Unit Linked Insurance Plan) that
-                    combines systematic investment with life insurance, offering
-                    up to 360X life cover.
-                  </div>
-                </div>
+      <p>
+        <span class="en">
+          In selected options, future premiums are paid by the company in case of unfortunate events.
+        </span>
+        <span class="hi">
+          चयनित विकल्पों में, दुर्भाग्यपूर्ण घटनाओं की स्थिति में भविष्य के प्रीमियम कंपनी द्वारा भुगतान किए जाते हैं।
+        </span>
+      </p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="smart-card">
+      <div class="icon-box">
+        <i class="fa-solid fa-user-group"></i>
+      </div>
+
+      <h3>
+        <span class="en">Women Empowerment Benefits</span>
+        <span class="hi">महिला सशक्तिकरण लाभ</span>
+      </h3>
+
+      <p>
+        <span class="en">
+          Additional allocation benefits for female policyholders (as applicable).
+        </span>
+        <span class="hi">
+          महिला पॉलिसीधारकों के लिए अतिरिक्त आवंटन लाभ (जहां लागू हो)।
+        </span>
+      </p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="smart-card">
+      <div class="icon-box">
+        <i class="fa-solid fa-chart-line"></i>
+      </div>
+
+      <h3>
+        <span class="en">Long-Term Wealth Creation</span>
+        <span class="hi">दीर्घकालिक धन निर्माण</span>
+      </h3>
+
+      <p>
+        <span class="en">
+          Stay invested systematically to benefit from market-linked growth potential while enjoying the advantage of disciplined investing through regular SIP contributions.
+        </span>
+        <span class="hi">
+          नियमित SIP योगदान के माध्यम से अनुशासित निवेश करते हुए मार्केट-लिंक्ड ग्रोथ का लाभ उठाने के लिए लंबे समय तक निवेशित रहें।
+        </span>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+   <section class="plan-section">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title">
+        <span class="en">Choose Your Plan Option</span>
+        <span class="hi">अपना प्लान विकल्प चुनें</span>
+      </h2>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Wealth Secure -->
+      <div class="col-md-6 col-lg-6">
+        <div class="plan-card text-center">
+
+          <div class="plan-icon wealth-icon">
+            <i class="fa-solid fa-sack-dollar"></i>
+          </div>
+
+          <h3 class="plan-title">
+            <span class="en">Wealth Secure</span>
+            <span class="hi">वेल्थ सिक्योर</span>
+          </h3>
+
+          <ul class="text-start">
+
+            <li>
+              <i class="fa-solid fa-circle-check check"></i>
+              <span class="en">Focus on wealth creation</span>
+              <span class="hi">धन निर्माण पर ध्यान</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-circle-check check"></i>
+              <span class="en">Death benefit + policy ends</span>
+              <span class="hi">मृत्यु लाभ + पॉलिसी समाप्त</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-circle-check check"></i>
+              <span class="highlight">
+                <span class="en">100% Maturity Corpus</span>
+                <span class="hi">100% मैच्योरिटी राशि</span>
+              </span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <!-- Future Secure -->
+      <div class="col-md-6 col-lg-6">
+        <div class="plan-card text-center">
+
+          <div class="plan-icon future-icon">
+            <i class="fa-solid fa-shield-heart"></i>
+          </div>
+
+          <h3 class="plan-title">
+            <span class="en">Future Secure</span>
+            <span class="hi">फ्यूचर सिक्योर</span>
+          </h3>
+
+          <ul class="text-start">
+
+            <li>
+              <i class="fa-solid fa-circle-check check"></i>
+              <span class="en">Focus on wealth creation + receive life insurance</span>
+              <span class="hi">धन निर्माण के साथ जीवन बीमा प्राप्त करें</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-circle-check check"></i>
+              <span class="en">Death benefit – Policy continues</span>
+              <span class="hi">मृत्यु लाभ – पॉलिसी जारी रहती है</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-circle-check check"></i>
+              <span class="en">Maturity Benefit equal to FV paid to the nominee</span>
+              <span class="hi">मैच्योरिटी लाभ (FV) नामित व्यक्ति को दिया जाता है</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-circle-check check"></i>
+              <span class="highlight">
+                <span class="en">100% Maturity Corpus + 360X life insurance cover</span>
+                <span class="hi">100% मैच्योरिटी राशि + 360X जीवन बीमा कवर</span>
+              </span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+   <section class="container-fluid py-5 disclaimer-container">
+
+  <!-- Heading -->
+  <div class="text-center mb-4">
+    <h1 class="main-headings">
+      <span class="en">Investment Illustration</span>
+      <span class="hi">निवेश उदाहरण</span>
+    </h1>
+  </div>
+
+  <!-- Image Section -->
+  <div class="image-container text-center mb-3 container">
+    <img
+      src="static/image/InvestmentIllust.jpg"
+      alt="Investment Illustration"
+      class="img-fluid rounded shadow"
+    />
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="disclaimer-box text-center">
+
+    <i class="fa-solid fa-triangle-exclamation disclaimer-icon"></i>
+
+    <strong>
+      <span class="en">Disclaimer:</span>
+      <span class="hi">अस्वीकरण:</span>
+    </strong>
+
+    <span class="en">
+      Returns are market-linked and not guaranteed. Investment risk is borne by the policyholder.
+    </span>
+
+    <span class="hi">
+      रिटर्न मार्केट-लिंक्ड होते हैं और गारंटीड नहीं हैं। निवेश का जोखिम पॉलिसीधारक द्वारा वहन किया जाता है।
+    </span>
+
+  </div>
+
+</section>
+
+   <section class="feature-section">
+
+  <div class="text-center">
+    <h2 class="who-invest-title">
+      <span class="en">Who Should Invest ?</span>
+      <span class="hi">किसे निवेश करना चाहिए?</span>
+    </h2>
+
+    <p class="who-invest-subtitle">
+      <span class="en">SMART SIP 360 is ideal for:</span>
+      <span class="hi">SMART SIP 360 इन लोगों के लिए उपयुक्त है:</span>
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="static/image/Professionals.png" alt="Salaried Professionals" />
+          </div>
+
+          <h3 class="feature-title">
+            <span class="en">Salaried Professionals</span>
+            <span class="hi">नौकरीपेशा लोग</span>
+          </h3>
+
+          <p class="feature-text">
+            <span class="en">looking to build long-term wealth.</span>
+            <span class="hi">जो दीर्घकालिक धन निर्माण करना चाहते हैं।</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="static/image/Business Owners.png" alt="Business Owners" />
+          </div>
+
+          <h3 class="feature-title">
+            <span class="en">Business Owners</span>
+            <span class="hi">व्यवसायी</span>
+          </h3>
+
+          <p class="feature-text">
+            <span class="en">planning tax-efficient financial growth.</span>
+            <span class="hi">जो टैक्स-एफिशिएंट वित्तीय वृद्धि की योजना बना रहे हैं।</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="static/image/Parents.png" alt="Parents" />
+          </div>
+
+          <h3 class="feature-title">
+            <span class="en">Parents</span>
+            <span class="hi">माता-पिता</span>
+          </h3>
+
+          <p class="feature-text">
+            <span class="en">planning for their child’s education.</span>
+            <span class="hi">जो अपने बच्चों की शिक्षा की योजना बना रहे हैं।</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="static/image/individuals.png" alt="Retirement" />
+          </div>
+
+          <h3 class="feature-title">
+            <span class="en">Individuals</span>
+            <span class="hi">व्यक्ति</span>
+          </h3>
+
+          <p class="feature-text">
+            <span class="en">preparing for retirement.</span>
+            <span class="hi">जो रिटायरमेंट की तैयारी कर रहे हैं।</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="static/image/NRIs.png" alt="NRIs" />
+          </div>
+
+          <h3 class="feature-title">
+            <span class="en">NRIs</span>
+            <span class="hi">एनआरआई</span>
+          </h3>
+
+          <p class="feature-text">
+            <span class="en">seeking tax-efficient wealth creation in India</span>
+            <span class="hi">जो भारत में टैक्स-एफिशिएंट धन निर्माण चाहते हैं</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="static/image/Housewives.png" alt="Housewives" />
+          </div>
+
+          <h3 class="feature-title">
+            <span class="en">Housewives / Homemakers</span>
+            <span class="hi">गृहिणी</span>
+          </h3>
+
+          <p class="feature-text">
+            <span class="en">looking to create financial security</span>
+            <span class="hi">जो वित्तीय सुरक्षा बनाना चाहती हैं</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="static/image/Grandparents.png" alt="Grandparents" />
+          </div>
+
+          <h3 class="feature-title">
+            <span class="en">Grandparents</span>
+            <span class="hi">दादा-दादी / नाना-नानी</span>
+          </h3>
+
+          <p class="feature-text">
+            <span class="en">planning a financial gift for their grandchildren</span>
+            <span class="hi">जो अपने पोते-पोतियों के लिए वित्तीय उपहार की योजना बना रहे हैं</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="static/image/Anyone.png" alt="Money Wealth" />
+          </div>
+
+          <h3 class="feature-title">
+            <span class="en">Anyone seeking tax-free wealth creation with protection</span>
+            <span class="hi">कोई भी व्यक्ति जो सुरक्षा के साथ टैक्स-फ्री धन निर्माण चाहता है</span>
+          </h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <section class="policy-section">
+  <div class="policy-container">
+    
+    <h2 class="policy-title">
+      <span class="en">Plan Details</span>
+      <span class="hi">प्लान की जानकारी</span>
+    </h2>
+
+    <div class="policy-card">
+
+      <div class="policy-row">
+        <div class="policy-label">
+          <span class="en">Entry Age</span>
+          <span class="hi">प्रवेश आयु</span>
+        </div>
+        <div class="policy-value">
+          <span class="en">18 – 50 years</span>
+          <span class="hi">18 – 50 वर्ष</span>
+        </div>
+      </div>
+
+      <div class="policy-row">
+        <div class="policy-label">
+          <span class="en">Premium Options</span>
+          <span class="hi">प्रीमियम विकल्प</span>
+        </div>
+        <div class="policy-value">
+          <span class="en">₹2,000 – ₹20,000 per month</span>
+          <span class="hi">₹2,000 – ₹20,000 प्रति माह</span>
+        </div>
+      </div>
+
+      <div class="policy-row">
+        <div class="policy-label">
+          <span class="en">Premium Payment Term</span>
+          <span class="hi">प्रीमियम भुगतान अवधि</span>
+        </div>
+        <div class="policy-value">
+          <span class="en">10 – 50 years</span>
+          <span class="hi">10 – 50 वर्ष</span>
+        </div>
+      </div>
+
+      <div class="policy-row">
+        <div class="policy-label">
+          <span class="en">Life Cover Multiple</span>
+          <span class="hi">लाइफ कवर मल्टीपल</span>
+        </div>
+        <div class="policy-value">
+          <span class="en">Up to 360X (subject to age & plan option)</span>
+          <span class="hi">360 गुना तक (आयु और प्लान विकल्प पर निर्भर)</span>
+        </div>
+      </div>
+
+      <div class="policy-row">
+        <div class="policy-label">
+          <span class="en">Fund Options</span>
+          <span class="hi">फंड विकल्प</span>
+        </div>
+        <div class="policy-value">
+          <span class="en">Multiple fund choices across equity, debt & balanced</span>
+          <span class="hi">इक्विटी, डेट और बैलेंस्ड में कई फंड विकल्प</span>
+        </div>
+      </div>
+
+      <div class="policy-row">
+        <div class="policy-label">
+          <span class="en">Partial Withdrawal</span>
+          <span class="hi">आंशिक निकासी</span>
+        </div>
+        <div class="policy-value">
+          <span class="en">Allowed after 5 policy years</span>
+          <span class="hi">5 वर्ष बाद अनुमति है</span>
+        </div>
+      </div>
+
+      <div class="policy-row">
+        <div class="policy-label">
+          <span class="en">Tax Benefit</span>
+          <span class="hi">कर लाभ</span>
+        </div>
+        <div class="policy-value">
+          <span class="en">Section 80C (premiums) & 10 (10D) (maturity)</span>
+          <span class="hi">धारा 80C (प्रीमियम) और 10(10D) (मैच्योरिटी)</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+   <section class="services">
+  <div class="container">
+
+    <h2 class="section-title">
+      <span class="en">Why Invest Through Us?</span>
+      <span class="hi">हमारे माध्यम से निवेश क्यों करें?</span>
+    </h2>
+
+    <div class="title-underline"></div>
+
+    <div class="services-grid">
+
+      <!-- Item 1 -->
+      <div class="service-item">
+        <div class="icon-box">
+          <i class="fa-solid fa-bullseye"></i>
+        </div>
+        <div>
+          <h3>
+            <span class="en">Personalized Goal Planning</span>
+            <span class="hi">व्यक्तिगत लक्ष्य योजना</span>
+          </h3>
+          <p>
+            <span class="en">Custom plans aligned to your unique financial goals.</span>
+            <span class="hi">आपके वित्तीय लक्ष्यों के अनुसार कस्टम प्लान।</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="service-item">
+        <div class="icon-box">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <div>
+          <h3>
+            <span class="en">Custom Return Illustration</span>
+            <span class="hi">कस्टम रिटर्न प्रोजेक्शन</span>
+          </h3>
+          <p>
+            <span class="en">See projected returns tailored to your investment.</span>
+            <span class="hi">अपने निवेश के अनुसार अनुमानित रिटर्न देखें।</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="service-item">
+        <div class="icon-box">
+          <i class="fa-solid fa-file-circle-check"></i>
+        </div>
+        <div>
+          <h3>
+            <span class="en">Claim Assistance</span>
+            <span class="hi">क्लेम सहायता</span>
+          </h3>
+          <p>
+            <span class="en">End-to-end support for hassle-free claims.</span>
+            <span class="hi">बिना परेशानी के क्लेम के लिए पूर्ण सहायता।</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="service-item">
+        <div class="icon-box">
+          <i class="fa-solid fa-chart-pie"></i>
+        </div>
+        <div>
+          <h3>
+            <span class="en">Long-Term Portfolio Monitoring</span>
+            <span class="hi">लॉन्ग-टर्म पोर्टफोलियो मॉनिटरिंग</span>
+          </h3>
+          <p>
+            <span class="en">Ongoing reviews and rebalancing for optimal growth.</span>
+            <span class="hi">बेहतर वृद्धि के लिए नियमित समीक्षा और बैलेंसिंग।</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="service-item">
+        <div class="icon-box">
+          <i class="fa-solid fa-headset"></i>
+        </div>
+        <div>
+          <h3>
+            <span class="en">Dedicated Support</span>
+            <span class="hi">समर्पित सहायता</span>
+          </h3>
+          <p>
+            <span class="en">A dedicated advisor for all your queries.</span>
+            <span class="hi">आपके सभी सवालों के लिए एक समर्पित सलाहकार।</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="service-item">
+        <div class="icon-box">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <div>
+          <h3>
+            <span class="en">Financial Risk Protection</span>
+            <span class="hi">वित्तीय जोखिम सुरक्षा</span>
+          </h3>
+          <p>
+            <span class="en">
+              Comprehensive strategies to safeguard your wealth against uncertainties.
+            </span>
+            <span class="hi">
+              अनिश्चितताओं से आपकी संपत्ति की सुरक्षा के लिए व्यापक रणनीतियाँ।
+            </span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+   <section class="smart-hero">
+
+  <h1>
+    <span class="en">SMART SIP 360 = Investment + Insurance</span>
+    <span class="hi">SMART SIP 360 = निवेश + बीमा</span>
+  </h1>
+
+  <p>
+    <span class="en">
+      ULIPs combine life insurance with market-linked investments. Premiums
+      split between coverage and funds (equity, debt, or hybrid) based on
+      risk. They offer flexible, long-term wealth creation and 100% tax-free
+      maturity for goals like child's education or retirement.
+    </span>
+
+    <span class="hi">
+      ULIP योजनाएँ जीवन बीमा और मार्केट-लिंक्ड निवेश का संयोजन हैं। प्रीमियम
+      को जोखिम के अनुसार कवरेज और फंड्स (इक्विटी, डेट या हाइब्रिड) में विभाजित
+      किया जाता है। ये योजनाएँ लचीले तरीके से दीर्घकालिक धन निर्माण और 100%
+      टैक्स-फ्री मैच्योरिटी प्रदान करती हैं, जैसे बच्चों की शिक्षा या
+      रिटायरमेंट के लिए।
+    </span>
+  </p>
+
+</section>
+
+   <section class="faq-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+
+        <h2 class="faq-title">
+          <span class="en">Frequently Asked Questions</span>
+          <span class="hi">अक्सर पूछे जाने वाले सवाल</span>
+        </h2>
+
+        <div class="title-underline"></div>
+
+        <div class="accordion text-start" id="faqAccordion">
+
+          <!-- 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                <span class="en">How is this different from a regular SIP in mutual funds?</span>
+                <span class="hi">यह म्यूचुअल फंड SIP से कैसे अलग है?</span>
+                <span class="icon-boxs"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <span class="en">
+                  Unlike mutual fund SIPs, SMART SIP 360 provides inbuilt life
+                  insurance cover, tax-free maturity, and waiver of premium
+                  benefit.
+                </span>
+                <span class="hi">
+                  म्यूचुअल फंड SIP के विपरीत, SMART SIP 360 में लाइफ इंश्योरेंस कवर,
+                  टैक्स-फ्री मैच्योरिटी और प्रीमियम माफी जैसी सुविधाएँ शामिल हैं।
+                </span>
               </div>
             </div>
           </div>
+
+          <!-- 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+                <span class="en">Who is eligible to buy this plan?</span>
+                <span class="hi">इस प्लान को कौन खरीद सकता है?</span>
+                <span class="icon-boxs"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <span class="en">Anyone aged 18 to 50 years can purchase this plan.</span>
+                <span class="hi">18 से 50 वर्ष की आयु का कोई भी व्यक्ति यह प्लान ले सकता है।</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+                <span class="en">What is the Waiver of Premium benefit?</span>
+                <span class="hi">प्रीमियम माफी लाभ क्या है?</span>
+                <span class="icon-boxs"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <span class="en">
+                  If the policyholder passes away, future premiums are waived
+                  and the policy continues.
+                </span>
+                <span class="hi">
+                  यदि पॉलिसीधारक की मृत्यु हो जाती है, तो भविष्य के प्रीमियम माफ
+                  हो जाते हैं और पॉलिसी जारी रहती है।
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
+                <span class="en">What happens if I miss a premium?</span>
+                <span class="hi">अगर मैं प्रीमियम मिस कर दूं तो क्या होगा?</span>
+                <span class="icon-boxs"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <span class="en">
+                  There is a grace period. If unpaid, policy may become
+                  discontinued.
+                </span>
+                <span class="hi">
+                  एक ग्रेस पीरियड होता है। यदि भुगतान नहीं होता, तो पॉलिसी बंद हो
+                  सकती है।
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">
+                <span class="en">Can I withdraw money before maturity?</span>
+                <span class="hi">क्या मैं मैच्योरिटी से पहले पैसे निकाल सकता हूँ?</span>
+                <span class="icon-boxs"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <span class="en">Yes, after 5 years partial withdrawal is allowed.</span>
+                <span class="hi">हाँ, 5 वर्ष के बाद आंशिक निकासी संभव है।</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq6">
+                <span class="en">What are the tax benefits?</span>
+                <span class="hi">टैक्स लाभ क्या हैं?</span>
+                <span class="icon-boxs"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+            </h2>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <span class="en">
+                  Premiums qualify under 80C and maturity is tax-free under 10 (10D).
+                </span>
+                <span class="hi">
+                  प्रीमियम 80C के तहत और मैच्योरिटी 10 (10D) के तहत टैक्स-फ्री होती है।
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq7">
+                <span class="en">Is SMART SIP 360 safe?</span>
+                <span class="hi">क्या SMART SIP 360 सुरक्षित है?</span>
+                <span class="icon-boxs"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+            </h2>
+            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <span class="en">
+                  Returns depend on market, but life cover ensures protection.
+                </span>
+                <span class="hi">
+                  रिटर्न मार्केट पर निर्भर करते हैं, लेकिन लाइफ कवर सुरक्षा देता है।
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq8">
+                <span class="en">What is SMART SIP 360?</span>
+                <span class="hi">SMART SIP 360 क्या है?</span>
+                <span class="icon-boxs"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+            </h2>
+            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <span class="en">
+                  A ULIP plan combining investment and life insurance.
+                </span>
+                <span class="hi">
+                  यह एक ULIP योजना है जो निवेश और बीमा को जोड़ती है।
+                </span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- =========================
         UNIQUE CTA SECTION
 ========================= -->
 
-    <section class="ulip-cta-unique">
-      <div class="cta-overlay"></div>
+   <section class="ulip-cta-unique">
+  <div class="cta-overlay"></div>
 
-      <div class="container">
-        <div class="cta-card">
-          <h2>Secure Tomorrow, Invest Smarter Today.</h2>
+  <div class="container">
+    <div class="cta-card">
 
-          <p>
-            A ULIP plan gives you the power to protect your loved ones while
-            growing your wealth through market-linked returns.
+      <h2>
+        <span class="en">Secure Tomorrow, Invest Smarter Today.</span>
+        <span class="hi">अपने भविष्य को सुरक्षित करें, आज समझदारी से निवेश करें।</span>
+      </h2>
+
+      <p>
+        <span class="en">
+          A ULIP plan gives you the power to protect your loved ones while
+          growing your wealth through market-linked returns.
+        </span>
+
+        <span class="hi">
+          ULIP प्लान आपको अपने परिवार की सुरक्षा के साथ-साथ मार्केट-लिंक्ड
+          रिटर्न के माध्यम से धन बढ़ाने का अवसर देता है।
+        </span>
+      </p>
+
+      <div class="cta-actions">
+        <a href="#sip-section-2" class="cta-btn-primary">
+          <span class="en">Schedule Free Consultation</span>
+          <span class="hi">फ्री कंसल्टेशन बुक करें</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+   <section class="faq-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+
+        <h2 class="faq-title">
+          <span class="en">Commonly Asked Queries</span>
+          <span class="hi">सामान्य पूछे जाने वाले प्रश्न</span>
+        </h2>
+
+        <div class="title-underline"></div>
+
+        <div class="accordion text-start" id="ulipAccordion">
+
+          <!-- 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#ulip1">
+                <span class="en">What is a ULIP ?</span>
+                <span class="hi">ULIP क्या है?</span>
+                <span class="icon-boxs"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+            </h2>
+
+            <div id="ulip1" class="accordion-collapse collapse show" data-bs-parent="#ulipAccordion">
+              <div class="accordion-body">
+                <span class="en">
+                  ULIP (Unit Linked Insurance Plan) combine life insurance with market-linked investments.
+                </span>
+                <span class="hi">
+                  ULIP (यूनिट लिंक्ड इंश्योरेंस प्लान) जीवन बीमा और मार्केट-लिंक्ड निवेश का संयोजन है।
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ulip2">
+                <span class="en">How does a ULIP plan work ?</span>
+                <span class="hi">ULIP प्लान कैसे काम करता है?</span>
+                <span class="icon-boxs"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+            </h2>
+
+            <div id="ulip2" class="accordion-collapse collapse" data-bs-parent="#ulipAccordion">
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <span class="en">Pay premiums regularly; part goes to insurance, rest invested.</span>
+                    <span class="hi">नियमित प्रीमियम भरें; कुछ हिस्सा बीमा में, बाकी निवेश में जाता है।</span>
+                  </li>
+                  <li>
+                    <span class="en">Investment converts into units (NAV based).</span>
+                    <span class="hi">निवेश यूनिट्स में बदलता है (NAV के आधार पर)।</span>
+                  </li>
+                  <li>
+                    <span class="en">Returns depend on market performance.</span>
+                    <span class="hi">रिटर्न मार्केट पर निर्भर करता है।</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ulip3">
+                <span class="en">Key features of ULIPs</span>
+                <span class="hi">ULIP की मुख्य विशेषताएँ</span>
+                <span class="icon-boxs"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+            </h2>
+
+            <div id="ulip3" class="accordion-collapse collapse" data-bs-parent="#ulipAccordion">
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <strong>
+                      <span class="en">Insurance + Investment</span>
+                      <span class="hi">बीमा + निवेश</span>
+                    </strong>
+                  </li>
+                  <li>
+                    <strong>
+                      <span class="en">Fund Switching</span>
+                      <span class="hi">फंड स्विच करने की सुविधा</span>
+                    </strong>
+                  </li>
+                  <li>
+                    <strong>
+                      <span class="en">Partial Withdrawal</span>
+                      <span class="hi">आंशिक निकासी</span>
+                    </strong>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ulip4">
+                <span class="en">Common myths about ULIPs</span>
+                <span class="hi">ULIP से जुड़े आम मिथक</span>
+                <span class="icon-boxs"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+            </h2>
+
+            <div id="ulip4" class="accordion-collapse collapse" data-bs-parent="#ulipAccordion">
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <strong>
+                      <span class="en">Low Returns?</span>
+                      <span class="hi">कम रिटर्न?</span>
+                    </strong>
+                    <span class="hi"> → आधुनिक ULIP अच्छे रिटर्न दे सकते हैं।</span>
+                  </li>
+                  <li>
+                    <strong>
+                      <span class="en">High Cost?</span>
+                      <span class="hi">महंगा?</span>
+                    </strong>
+                    <span class="hi"> → अब कम चार्जेस लागू हैं।</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ulip5">
+                <span class="en">Who can opt for this plan ?</span>
+                <span class="hi">कौन इस प्लान को ले सकता है?</span>
+                <span class="icon-boxs"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+            </h2>
+
+            <div id="ulip5" class="accordion-collapse collapse" data-bs-parent="#ulipAccordion">
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <span class="en">Long-term investors</span>
+                    <span class="hi">लंबी अवधि के निवेशक</span>
+                  </li>
+                  <li>
+                    <span class="en">People seeking protection + growth</span>
+                    <span class="hi">सुरक्षा और वृद्धि चाहने वाले लोग</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ulip6">
+                <span class="en">Benefits of a ULIP plan</span>
+                <span class="hi">ULIP के फायदे</span>
+                <span class="icon-boxs"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+            </h2>
+
+            <div id="ulip6" class="accordion-collapse collapse" data-bs-parent="#ulipAccordion">
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <span class="en">Life cover + wealth creation</span>
+                    <span class="hi">बीमा + धन निर्माण</span>
+                  </li>
+                  <li>
+                    <span class="en">Tax benefits</span>
+                    <span class="hi">कर लाभ</span>
+                  </li>
+                  <li>
+                    <span class="en">Long-term growth</span>
+                    <span class="hi">दीर्घकालिक वृद्धि</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ulip7">
+                <span class="en">Why Invest in ULIPs?</span>
+                <span class="hi">ULIP में निवेश क्यों करें?</span>
+                <span class="icon-boxs"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+            </h2>
+
+            <div id="ulip7" class="accordion-collapse collapse" data-bs-parent="#ulipAccordion">
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <strong>
+                      <span class="en">Dual Benefit</span>
+                      <span class="hi">दोहरा लाभ</span>
+                    </strong>
+                  </li>
+                  <li>
+                    <strong>
+                      <span class="en">Flexible Funds</span>
+                      <span class="hi">लचीले फंड विकल्प</span>
+                    </strong>
+                  </li>
+                  <li>
+                    <strong>
+                      <span class="en">Tax Efficiency</span>
+                      <span class="hi">कर दक्षता</span>
+                    </strong>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <section class="sip-section-2" id="sip-section-2">
+  <div class="sip-container-2">
+
+    <h2>
+      <span class="en">Ready to Secure Your Future?</span>
+      <span class="hi">क्या आप अपना भविष्य सुरक्षित करने के लिए तैयार हैं?</span>
+    </h2>
+
+    <p class="sip-subtitle">
+      <span class="en">Let us calculate your personalized SMART SIP 360 plan.</span>
+      <span class="hi">आइए हम आपके लिए पर्सनलाइज्ड SMART SIP 360 प्लान तैयार करें।</span>
+    </p>
+
+   <form class="sip-form">
+
+  <!-- Full Name -->
+  <input
+    type="text"
+    class="en"
+    placeholder="Full Name"
+    required
+    oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')"
+  />
+  <input
+    type="text"
+    class="hi"
+    placeholder="पूरा नाम"
+    required
+  />
+
+  <!-- Email -->
+  <input
+    type="email"
+    class="en"
+    placeholder="Email Address"
+    required
+  />
+  <input
+    type="email"
+    class="hi"
+    placeholder="ईमेल पता"
+    required
+  />
+
+  <!-- Mobile -->
+  <input
+    type="text"
+    class="en"
+    placeholder="Mobile Number"
+    maxlength="10"
+    inputmode="numeric"
+    required
+  />
+  <input
+    type="text"
+    class="hi"
+    placeholder="मोबाइल नंबर"
+    maxlength="10"
+    inputmode="numeric"
+    required
+  />
+
+  <!-- Investment -->
+  <input
+    type="text"
+    class="en"
+    placeholder="Monthly Investment Budget"
+    maxlength="5"
+    inputmode="numeric"
+    required
+  />
+  <input
+    type="text"
+    class="hi"
+    placeholder="मासिक निवेश बजट"
+    maxlength="5"
+    inputmode="numeric"
+    required
+  />
+
+  <!-- Goal -->
+  <select class="en" required>
+    <option disabled selected>Select Your Goal</option>
+    <option>Retirement Planning</option>
+    <option>Child Education</option>
+    <option>Wealth Creation</option>
+    <option>Home Purchase</option>
+  </select>
+
+  <select class="hi" required>
+    <option disabled selected>अपना लक्ष्य चुनें</option>
+    <option>रिटायरमेंट योजना</option>
+    <option>बच्चों की शिक्षा</option>
+    <option>धन निर्माण</option>
+    <option>घर खरीदना</option>
+  </select>
+
+  <!-- Button -->
+  <button type="submit">
+    <span class="en">GET MY CUSTOM PLAN NOW</span>
+    <span class="hi">अभी अपना कस्टम प्लान प्राप्त करें</span>
+  </button>
+
+</form>
+
+    <p class="sip-contact">
+      <span class="en">Or Call / WhatsApp:</span>
+      <span class="hi">या कॉल / व्हाट्सएप करें:</span>
+      <strong>+91-9406960918</strong>
+    </p>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-12">
+          <p style="font-size: 13px; line-height: 1.6; text-align: center; color: #ccc;">
+
+            <strong>
+              <span class="en">Important Disclaimer:</span>
+              <span class="hi">महत्वपूर्ण अस्वीकरण:</span>
+            </strong>
+
+            <span class="en">
+              SMART SIP 360 is a Unit Linked Insurance Plan offered by Tata AIA Life Insurance.
+              Investment in market-linked funds is subject to market risks.
+              Past performance does not guarantee future returns.
+              Tax benefits are subject to prevailing tax laws.
+              Please read sales brochure carefully before investing.
+            </span>
+
+            <span class="hi">
+              SMART SIP 360 एक यूनिट लिंक्ड इंश्योरेंस प्लान है जो Tata AIA Life Insurance द्वारा प्रदान किया जाता है।
+              मार्केट-लिंक्ड फंड में निवेश बाजार जोखिमों के अधीन है।
+              पिछला प्रदर्शन भविष्य के रिटर्न की गारंटी नहीं देता।
+              कर लाभ वर्तमान कर कानूनों के अनुसार लागू होते हैं।
+              निवेश से पहले कृपया ब्रोशर ध्यान से पढ़ें।
+            </span>
+
           </p>
-
-          <div class="cta-actions">
-            <a href="#sip-section-2" class="cta-btn-primary"
-              >Schedule Free Consultation</a
-            >
-          </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="faq-section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="faq-title">Commonly Asked Queries</h2>
-            <div class="title-underline"></div>
-
-            <div class="accordion text-start" id="ulipAccordion">
-              <!-- 1 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#ulip1"
-                  >
-                    What is a ULIP ?
-                    <span class="icon-boxs">
-                      <i class="fa-solid fa-chevron-down"></i>
-                    </span>
-                  </button>
-                </h2>
-
-                <div
-                  id="ulip1"
-                  class="accordion-collapse collapse show"
-                  data-bs-parent="#ulipAccordion"
-                >
-                  <div class="accordion-body">
-                    ULIP (Unit Linked Insurance Plan) combine life insurance
-                    with market-linked investments. Premiums split between
-                    coverage and funds (equity, debt, or hybrid) based on risk.
-                    They offer flexible, long-term wealth creation and 100%
-                    tax-free maturity for goals like child's education or
-                    retirement.
-                  </div>
-                </div>
-              </div>
-
-              <!-- 2 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#ulip2"
-                  >
-                    How does a ULIP plan work ?
-                    <span class="icon-boxs">
-                      <i class="fa-solid fa-chevron-down"></i>
-                    </span>
-                  </button>
-                </h2>
-
-                <div
-                  id="ulip2"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#ulipAccordion"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        Pay regular premiums (monthly/quarterly/yearly); portion
-                        funds life insurance, remainder invests in chosen funds.
-                      </li>
-                      <li>
-                        Investment splits into units at fixed face value; unit
-                        value is Net Asset Value (NAV).
-                      </li>
-                      <li>
-                        Grows with market performance; switch funds per
-                        conditions.
-                      </li>
-                      <li>Receive fund value at maturity.</li>
-                      <li>
-                        On death, family gets higher of Sum Assured + Total Fund
-                        Value (TATA pays remaining premiums per plan).
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 3 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#ulip3"
-                  >
-                    Key features of ULIPs
-                    <span class="icon-boxs">
-                      <i class="fa-solid fa-chevron-down"></i>
-                    </span>
-                  </button>
-                </h2>
-
-                <div
-                  id="ulip3"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#ulipAccordion"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        <strong>Insurance + Investment in One Plan</strong
-                        ><br />
-                        ULIPs offer dual benefits: market-linked wealth creation
-                        and life insurance for you/family throughout the term.
-                      </li>
-
-                      <li>
-                        <strong>Switch Between Funds</strong><br />
-                        Switch between equity/debt funds during term; allows 12
-                        switches (per policy terms).
-                      </li>
-
-                      <li>
-                        <strong>Premium Redirection</strong><br />
-                        Redirect future premiums to different funds anytime via
-                        policy number and allocation percentages.
-                      </li>
-
-                      <li>
-                        <strong>Partial Withdrawals</strong><br />
-                        5-year lock-in; after, unlimited partial withdrawals
-                        from fund value without extra charges (per policy
-                        terms).
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 4 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#ulip4"
-                  >
-                    Common myths about ULIPs
-                    <span class="icon-boxs">
-                      <i class="fa-solid fa-chevron-down"></i>
-                    </span>
-                  </button>
-                </h2>
-
-                <div
-                  id="ulip4"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#ulipAccordion"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        <strong>Myth: ULIPs Give Low Returns</strong><br />
-                        Reality: Modern ULIPs deliver competitive market-linked
-                        returns with much lower charges.
-                      </li>
-
-                      <li>
-                        <strong>Myth: ULIPs Are Expensive</strong><br />
-                        Reality: IRDAI regulations have slashed charges,
-                        boosting cost-efficiency.
-                      </li>
-
-                      <li>
-                        <strong>Myth: ULIPs Are High Risk</strong><br />
-                        Reality: Risk matches chosen fund (equity, balanced, or
-                        debt) per appetite.
-                      </li>
-
-                      <li>
-                        <strong>Myth: ULIPs Are Complicated</strong><br />
-                        Reality: Simple to manage once fund allocation is
-                        understood; easy switching.
-                      </li>
-
-                      <li>
-                        <strong
-                          >Myth: Market Fluctuations Affect Life Cover</strong
-                        ><br />
-                        Reality: Life cover stays fixed; death benefit protected
-                        per terms.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 5 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#ulip5"
-                  >
-                    Who can opt for this plan ?
-                    <span class="icon-boxs">
-                      <i class="fa-solid fa-chevron-down"></i>
-                    </span>
-                  </button>
-                </h2>
-
-                <div
-                  id="ulip5"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#ulipAccordion"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        Long-term wealth builders and goal-based planners.
-                      </li>
-                      <li>Investors seeking protection + growth.</li>
-                      <li>Tax-conscious individuals at any life stage.</li>
-                      <li>
-                        Low- to high-risk profiles (young professionals
-                        included).
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 6 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#ulip6"
-                  >
-                    Benefits of a ULIP plan
-                    <span class="icon-boxs">
-                      <i class="fa-solid fa-chevron-down"></i>
-                    </span>
-                  </button>
-                </h2>
-
-                <div
-                  id="ulip6"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#ulipAccordion"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>Life cover with wealth creation</li>
-                      <li>Disciplined long-term investment</li>
-                      <li>Market-linked growth potential</li>
-                      <li>Tax-efficient returns</li>
-                      <li>
-                        Suitable for retirement, child education, or long-term
-                        goals
-                      </li>
-                      <li>Power of compounding</li>
-                      <li>Flexibility in investment</li>
-                      <li>100% tax-free maturity (as per policy terms)</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 7 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#ulip7"
-                  >
-                    Why Invest in ULIPs?
-                    <span class="icon-boxs">
-                      <i class="fa-solid fa-chevron-down"></i>
-                    </span>
-                  </button>
-                </h2>
-
-                <div
-                  id="ulip7"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#ulipAccordion"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        <strong>Dual Benefit</strong><br />
-                        ULIPs provide life insurance protection along with
-                        market-linked wealth creation in one plan.
-                      </li>
-
-                      <li>
-                        <strong>Flexible Funds</strong><br />
-                        (Choose equity, debt, or hybrid funds based on your risk
-                        profile and goals.)
-                      </li>
-
-                      <li>
-                        <strong>Tax Efficiency</strong><br />
-                        Premiums may qualify for Section 80C benefits, and
-                        maturity proceeds may be tax-free under Section 10
-                        (10D)*.
-                      </li>
-
-                      <li>
-                        <strong>Long-Term Planning</strong><br />
-                        Ideal for retirement, children’s education, and
-                        long-term wealth creation.
-                      </li>
-
-                      <li>
-                        <strong>Disciplined Investing</strong><br />
-                        The 5-year lock-in period encourages long-term financial
-                        growth.
-                      </li>
-
-                      <li>
-                        <strong>Fund Switching</strong><br />
-                        Switch between funds during the policy term as per
-                        market conditions and needs.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sip-section-2" id="sip-section-2">
-      <div class="sip-container-2">
-        <h2>Ready to Secure Your Future?</h2>
-        <p class="sip-subtitle">
-          Let us calculate your personalized SMART SIP 360 plan.
-        </p>
-        <form class="sip-form">
-          <!-- Full Name -->
-          <input
-            type="text"
-            placeholder="Full Name"
-            required
-            oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')"
-          />
-
-          <!-- Email -->
-          <input
-            type="email"
-            class="form-control"
-            placeholder="Email Address*"
-            pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-            oninput="this.value = this.value.replace(/[^a-zA-Z0-9@._-]/g, '')"
-            required
-          />
-
-          <!-- Mobile Number -->
-          <input
-            type="text"
-            placeholder="Mobile Number"
-            required
-            maxlength="10"
-            inputmode="numeric"
-            oninput="
-              this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)
-            "
-          />
-
-          <!-- Monthly Investment -->
-          <input
-            type="text"
-            placeholder="Monthly Investment Budget"
-            required
-            maxlength="5"
-            inputmode="numeric"
-            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 5)"
-          />
-
-          <!-- Goal -->
-          <select required>
-            <option value disabled selected>Select Your Goal</option>
-            <option>Retirement Planning</option>
-            <option>Child Education</option>
-            <option>Wealth Creation</option>
-            <option>Home Purchase</option>
-          </select>
-
-          <button type="submit">GET MY CUSTOM PLAN NOW</button>
-        </form>
-
-        <p class="sip-contact">
-          Or Call / WhatsApp: <strong>+91-9406960918</strong>
-        </p>
-        <div class="container mt-4">
-          <div class="row">
-            <div class="col-12">
-              <p
-                style="
-                  font-size: 13px;
-                  line-height: 1.6;
-                  text-align: center;
-                  color: #ccc;
-                "
-              >
-                <strong>Important Disclaimer:</strong> SMART SIP 360 is a Unit
-                Linked Insurance Plan offered by Tata AIA Life Insurance.
-                Investment in market-linked funds is subject to market risks.
-                Past performance does not guarantee future returns. Tax benefits
-                are subject to prevailing tax laws. Please read sales brochure
-                carefully before investing.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  </div>
+</section>
     <footer class="footer-section text-white" id="main-footer"></footer>
     <script>
       const menuToggle = document.getElementById("menuToggle");
@@ -1401,8 +1733,31 @@
 
       cards.forEach((card) => observer.observe(card));
     </script>
- 
 
+   
+
+<script>
+let currentLang = "en";
+
+function toggleLang() {
+  const btn = document.querySelector(".lang-btn");
+
+  currentLang = currentLang === "en" ? "hi" : "en";
+
+  document.querySelectorAll(".en").forEach(el => {
+    el.style.display = currentLang === "hi" ? "none" : "inline";
+  });
+
+  document.querySelectorAll(".hi").forEach(el => {
+    el.style.display = currentLang === "hi" ? "inline" : "none";
+  });
+
+  // Change button text
+  btn.innerText = currentLang === "hi"
+    ? "View in English"
+    : "हिंदी में देखें";
+}
+</script>
     <!-- Owl Carousel Init -->
     <script src="index.js"></script>
    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
