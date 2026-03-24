@@ -34,7 +34,7 @@ const footer = () => {
                     <li><a href="index.html#finance-section"><i class="fas fa-arrow-right"></i> Privacy Policy</a></li>
                     <li><a href="index.html#finance-section"><i class="fas fa-arrow-right"></i> Terms Of Use</a></li>
                     <li><a href="index.html#finance-section"><i class="fas fa-arrow-right"></i> Contact Us</a></li>
-                    <li><a href="index.html#finance-section"><i class="fas fa-arrow-right"></i> Contact Us</a></li>
+                    <li><a href="index.html#finance-section"><i class="fas fa-arrow-right"></i> Site Map</a></li>
                     <li><a href="index.html#finance-section"><i class="fas fa-arrow-right"></i> FAQ</a></li>
                 </ul></div>
                 
