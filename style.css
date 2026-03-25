@@ -1814,8 +1814,9 @@ textarea.form-control{
 }
 
 .team-card p{
-  color: #777;
-  font-size: 15px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 
