@@ -8,7 +8,7 @@ const slides = [
     image: 'static/image/slide-1.avif'
   },
   {
-    title: 'Personalized Financial Planning <span>Solutions</span> in Bhopal',
+    title: 'Personalized Financial Planning Solutions in <span>Bhopal</span>',
     image: 'static/image/slide-2.avif'
   }
 ];
