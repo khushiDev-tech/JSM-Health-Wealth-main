@@ -1,14 +1,14 @@
 const slides = [
   {
-    title: 'Secure Your Financial Future with <span>JSM</span>',
+    title: 'Secure Your Financial Future with <span>JSM Wealth</span>',
     image: 'static/image/health-insurance.jpg'
   },
   {
-    title: 'Your Trusted Partner in Insurance<span> Solutions</span>',
+    title: 'Your Trusted Partner in Life, Health & Insurance <span>Solutions</span>',
     image: 'static/image/slide-1.avif'
   },
   {
-    title: 'Personalized Solutions to Achieve Your <span>Goals</span>',
+    title: 'Personalized Financial Planning <span>Solutions</span> in Bhopal',
     image: 'static/image/slide-2.avif'
   }
 ];

@@ -1914,96 +1914,137 @@ textarea.form-control{
     font-size: 14px;
   }
 }
-/* 
 
-.insta-section {
-  padding: 60px 20px;
-  background: #f9fbff;
-  text-align: center;
-  font-family: Arial, sans-serif;
+
+ /* CTA below services */
+.service-cta {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
 }
 
-.insta-section h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
+.service-cta a {
+    color: #174c3c;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 5px;
+    border-bottom: 2px solid #174c3c;
+    transition: 0.3s;
 }
 
-.subtitle {
-  color: #666;
-  margin-bottom: 30px;
+.service-cta a:hover {
+    color: #c40000;
+    border-color: #c40000;
+}
+/* WhatsApp Button */
+.whatsapp-btn{
+    text-decoration: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 999;
+    transition: 0.3s;
 }
 
-.carousel {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding-bottom: 10px;
-  scroll-snap-type: x mandatory;
+.whatsapp-btn:hover{
+    transform: scale(1.1);
 }
 
-.carousel::-webkit-scrollbar {
-  height: 6px;
+/* Scroll Top Button */
+.scroll-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    background: #0B6A68;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    transition: 0.3s;
 }
 
-.carousel::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 10px;
+.scroll-top:hover{
+    background: #e67e00;
+    transform: translateY(-3px);
+}
+/* ===================================
+   RESPONSIVE FLOATING BUTTONS
+=================================== */
+
+/* Tablet */
+@media (max-width: 991px){
+
+    .whatsapp-btn{
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
+        right: 15px;
+        bottom: 80px;
+    }
+
+    .scroll-top{
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        right: 15px;
+        bottom: 20px;
+    }
 }
 
-.card {
-  min-width: 220px;
-  background: #fff;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  scroll-snap-align: start;
-  transition: transform 0.3s ease;
+/* Mobile */
+@media (max-width: 768px){
+
+    .whatsapp-btn{
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+        right: 12px;
+        bottom: 75px;
+    }
+
+    .scroll-top{
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+        right: 12px;
+        bottom: 15px;
+    }
 }
 
-.card:hover {
-  transform: translateY(-5px);
+/* Small Mobile */
+@media (max-width: 480px){
+
+    .whatsapp-btn{
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        right: 10px;
+        bottom: 130px;
+    }
+
+    .scroll-top{
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        right: 10px;
+        bottom: 12px;
+        border-radius: 8px;
+    }
 }
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card p {
-  padding: 12px;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.follow-btn {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 12px 25px;
-  background: #e1306c;
-  color: white;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.follow-btn:hover {
-  background: #c72c60;
-} 
-
- */
-/* .footer-map iframe {
-  width: 100%;
-  height: 150px;
-  border-radius: 10px;
-}
-
-.contact-row {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
-  align-items: flex-start;
-} */
-
-

@@ -10,9 +10,9 @@ const footer = () => {
 
             <!-- Column 1 -->
             <div class="col-lg-3 col-md-6 mb-5">
-                <img src="static/image/JSM LOGO 1.jpeg" 
+                <a href="index.html"><img src="static/image/JSM LOGO 1.jpeg" 
                      class="footer-logo mb-3" 
-                     alt="JSM Logo" />
+                     alt="JSM Logo" /></a>
 
                 <p class="footer-text">
                     JSM Wealth, Health & Insurance provides reliable wealth management 
@@ -101,7 +101,7 @@ const footer = () => {
 
     <!-- Bottom -->
     <div class="footer-bottom">
-        © ${year} JSM Wealth Health & Insurance | All Rights Reserved | Digital Partner: paarsiv.com
+        © ${year} JSM Wealth Health & Insurance | All Rights Reserved | Digital Partner: Paarsiv.com
     </div>
     `;
 }
