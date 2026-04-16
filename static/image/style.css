@@ -2,7 +2,7 @@
      /* =========================
    Root Variables
 ========================= */
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   --primary-color: #ff494a;
@@ -23,14 +23,14 @@
 
 body {
 overflow-x: hidden;
-  font-family: "Open Sans", sans-serif;
-  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Roboto", sans-serif;
   color: var(--text-color);
   line-height: 1.6;
   background: #fff;
 }
 
-.containers {
+.container {
   max-width: 1170px;
   margin: auto;
   padding: 0 20px;
@@ -99,7 +99,6 @@ overflow-x: hidden;
     margin: 0 8px;
   }
 }
-
 /* =========================
    Navigation
 ========================= */
@@ -130,7 +129,7 @@ overflow-x: hidden;
 }
 
 .logo img {
-  max-height: 75px;
+  max-height: 55px;
   width: auto;
   object-fit: contain;
 }
@@ -342,7 +341,10 @@ overflow-x: hidden;
     background: rgba(0, 0, 0, 0.6);  /* Darkness Control */
     z-index: -1;
 }
-    
+    .anchor{
+      color: #fff;
+      text-decoration: none;
+    }
 
     
 
@@ -445,7 +447,7 @@ overflow-x: hidden;
 
   /* Logo */
   .logo img {
-    max-height: 60px;
+    max-height: 45px;
   }
 
   /* Navigation links stack */
@@ -519,7 +521,7 @@ overflow-x: hidden;
 ===================================== */
 
 .about-section{
-    padding: 60px 0;
+    padding: 80px 0;
     position: relative;
     overflow: hidden;
 }
@@ -529,7 +531,7 @@ overflow-x: hidden;
 ============================= */
 
 .about-main-title{
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 800;
     line-height: 1.2;
 }
@@ -767,77 +769,6 @@ overflow-x: hidden;
         max-width:260px;
     }
 }
-
-.wealth-section{
-background:#f7f9f8;
-padding:40px 20px;
-text-align:center;
-font-family:"Open Sans",sans-serif;
-}
-
-.wealth-heading{
-font-size:36px;
-font-weight:700;
-color:#1f4d3f;
-margin-bottom:60px;
-}
-
-.wealth-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
-max-width:1100px;
-margin:auto;
-}
-
-.wealth-card{
-background:#ffffff;
-padding:40px 30px;
-border-radius:14px;
-box-shadow:0 12px 35px rgba(0,0,0,0.07);
-transition:.3s;
-}
-
-.wealth-card:hover{
-transform:translateY(-8px);
-box-shadow:0 18px 45px rgba(0,0,0,0.12);
-}
-
-.wealth-icon{
-width:70px;
-height:70px;
-background: #0B6A68;
-color:#fff;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:50%;
-font-size:26px;
-margin:0 auto 20px;
-}
-
-.wealth-card h4{
-font-size:22px;
-margin-bottom:10px;
-color:#000;
-}
-
-.wealth-card p{
-font-size:16px;
-color:#6b7280;
-line-height:1.6;
-}
-@media(max-width:768px){
-
-.wealth-grid{
-grid-template-columns:1fr;
-}
-
-.wealth-heading{
-font-size:26px;
-}
-
-}
 /* =========================
    SECTION DIVIDER
 ========================= */
@@ -986,7 +917,7 @@ font-size:26px;
 
 /* Main Heading */
 .main-heading {
-        font-size: 37px;
+    font-size: 42px;
     font-weight: 700;
     color: #111;
 }
@@ -1122,7 +1053,7 @@ font-size:26px;
 /* Section */
 .associated-section{
   background: #EAF6EE;
-    padding:30px 0;
+    padding:40px 0;
     text-align:center;
 }
 
@@ -1188,7 +1119,7 @@ font-size:26px;
 =================================== */
 .section-title{
     font-family: "Open Sans", sans-serif;
-       font-size: 37px;
+    font-size:30px;
     font-weight:700;
     color:#111827;
     margin-bottom:25px;
@@ -1204,38 +1135,36 @@ font-size:26px;
 }
 
 /* ===================================
-   GLOBAL SECTION
-=================================== */
-.finance-section{
-    background:#f8f9fa;
-    padding:70px 0;
-}
-
-/* ===================================
-   CONTACT TITLE
+   CONTACT US TITLE
 =================================== */
 .contact-title{
-    font-family:"Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     display:flex;
     align-items:center;
     justify-content:center;
     gap:15px;
+    flex-wrap:nowrap;
     text-align:center;
     font-weight:700;
     font-size:32px;
     color:#1a1a1a;
-    margin-bottom:40px;
+    letter-spacing:1px;
+    margin-bottom:25px;
 }
 
+/* Decorative Line */
 .line{
     width:70px;
     height:3px;
     background:#174c3c;
+    flex-shrink:0;
 }
 
+/* Dots */
 .dots{
     display:flex;
     gap:6px;
+    flex-shrink:0;
 }
 
 .dots span{
@@ -1246,46 +1175,104 @@ font-size:26px;
 }
 
 /* ===================================
-   LEFT FORM SECTION
+   CONTACT BAR
+=================================== */
+.contact-bar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+/* Button */
+.contact-btn{
+    background:#174c3c;
+    color:#fff;
+    padding:12px 25px;
+    font-size:17px;
+    font-weight:500;
+    text-decoration:none;
+    border-radius:4px;
+    transition:0.3s;
+}
+
+.contact-btn:hover{
+    background:#c00000;
+    transform:translateY(-3px);
+}
+
+/* Phone */
+.phone-wrapper{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.phone-ring{
+    background:rgba(225,6,0,0.15);
+    padding:8px;
+    border-radius:50%;
+}
+
+.phone-circle{
+    width:50px;
+    height:50px;
+    background:#174c3c;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:20px;
+    transition:0.3s;
+}
+
+.phone-circle:hover{
+    transform:scale(1.1);
+}
+
+.phone-number{
+    font-size:22px;
+    font-weight:700;
+    color:#174c3c;
+    text-decoration:none;
+}
+
+/* ===================================
+   QUOTE SECTION
 =================================== */
 .quote-section{
     background:#f2f2f2;
     padding:40px 30px;
     border-top:6px solid #174c3c;
-    border-radius:10px;
-    width:100%;
-    height:100%;
+    max-width:800px;
+    margin:40px auto;
 }
 
 .quote-title{
-    font-family:"Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size:28px;
     font-weight:700;
     color:#111827;
-    margin-bottom:25px;
+    margin-bottom:30px;
     text-align:center;
 }
 
-/* FORM */
+/* Form Controls */
 .form-control,
 .form-select{
     background:#e5e5e5;
     border:none;
     height:55px;
     font-size:16px;
-    padding-left:15px;
+    padding-left:20px;
     border-radius:4px;
-}
-
-.form-control:focus,
-.form-select:focus{
-    outline:none;
-    box-shadow:none;
 }
 
 textarea.form-control{
     height:140px;
-    padding-top:15px;
+    padding-top:20px;
     resize:none;
 }
 
@@ -1296,7 +1283,7 @@ textarea.form-control{
     font-size:18px;
 }
 
-/* BUTTON */
+/* Submit */
 .send-btn{
     font-weight:500;
     padding:12px;
@@ -1305,7 +1292,6 @@ textarea.form-control{
     background:#174c3c;
     border:none;
     width:100%;
-    border-radius:4px;
     transition:0.3s;
 }
 
@@ -1314,167 +1300,30 @@ textarea.form-control{
 }
 
 /* ===================================
-   RIGHT INSTAGRAM SECTION
-=================================== */
-.instagram-section{
-    background:#ffffff;
-    border-radius:10px;
-    padding:40px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
-    height:100%;
-    display:flex;
-    flex-direction:column;
-}
-
-.insta-title{
-    font-family:"Open Sans", sans-serif;
-    font-size:24px;
-    font-weight:700;
-    color: #000;
-    margin-bottom:20px;
-    text-align:center;
-}
-
-/* PROFILE */
-.insta-profile{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:12px;
-    margin-bottom:20px;
-}
-
-.insta-logo{
-    width:55px;
-    height:55px;
-    border-radius:50%;
-    overflow:hidden;
-}
-
-.insta-logo img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-.insta-profile a{
-    text-decoration:none;
-    font-size:18px;
-    font-weight:600;
-    color:#000;
-}
-
-/* GRID */
-.insta-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:10px;
-    flex-grow:1;
-}
-
-.insta-item{
-    position:relative;
-    overflow:hidden;
-    border-radius:6px;
-}
-
-.insta-item img{
-    width:100%;
-    height:100%;
-    aspect-ratio:1/1;
-    object-fit:cover;
-    transition:0.3s;
-}
-
-.insta-item:hover img{
-    transform:scale(1.05);
-}
-
-/* OVERLAY */
-.overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.4);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    opacity:0;
-    transition:0.3s;
-}
-
-.insta-item:hover .overlay{
-    opacity:1;
-}
-
-.overlay i{
-    color:#fff;
-    font-size:24px;
-}
-
-/* BUTTONS */
-.insta-buttons{
-    margin-top:20px;
-    display:flex;
-    gap:10px;
-    justify-content:center;
-}
-
-.btn{
-    padding:10px 18px;
-    border-radius:4px;
-    text-decoration:none;
-    font-size:15px;
-    transition:0.3s;
-}
-
-.load-btn{
-    background:#333;
-    color:#fff;
-}
-
-.load-btn:hover{
-    background:#555;
-}
-
-.follow-btn{
-    background:#174c3c;
-    color:#fff;
-}
-
-.follow-btn:hover{
-    background:#2a6a4b;
-}
-
-/* ===================================
    RESPONSIVE
 =================================== */
 
-/* Laptop */
-@media (max-width:1200px){
-    .instagram-section,
-    .quote-section{
-        padding:30px;
-    }
+/* Large Screens */
+@media (min-width:1200px){
+    .section-title{font-size:34px;}
+    .phone-number{font-size:24px;}
 }
 
 /* Tablet */
 @media (max-width:991px){
 
-    .finance-section .row{
-        flex-direction:column;
+    .contact-title{font-size:26px;}
+
+    .contact-bar{
+        gap:25px;
     }
 
-    .quote-section,
-    .instagram-section{
-        height:auto;
-    }
+    .phone-number{font-size:20px;}
 
-    .instagram-section{
-        margin-top:20px;
-    }
-
-    .insta-grid{
-        grid-template-columns:repeat(4,1fr);
+    .phone-circle{
+        width:45px;
+        height:45px;
+        font-size:18px;
     }
 }
 
@@ -1484,68 +1333,52 @@ textarea.form-control{
     .contact-title{
         font-size:22px;
         gap:10px;
-        flex-wrap:wrap;
     }
 
-    .line{
-        width:40px;
-        height:2px;
-    }
+    .line{width:45px;height:2px;}
 
-    .dots span{
-        width:5px;
-        height:5px;
-    }
+    .dots span{width:5px;height:5px;}
 
-    .quote-section,
-    .instagram-section{
-        padding:25px 15px;
-    }
-
-    .insta-grid{
-        grid-template-columns:repeat(3,1fr);
-    }
-
-    .insta-buttons{
+    .contact-bar{
         flex-direction:column;
+        text-align:center;
     }
 
-    .insta-buttons .btn{
+    .contact-btn{
         width:100%;
+        max-width:260px;
     }
+
+    .phone-wrapper{
+        justify-content:center;
+    }
+
+    .quote-section{
+        padding:30px 20px;
+        margin:30px 15px;
+    }
+
+    .quote-title{font-size:22px;}
 }
 
 /* Small Mobile */
 @media (max-width:480px){
 
-    .contact-title{
-        font-size:18px;
-    }
+    .contact-title{font-size:18px;}
 
-    .quote-title{
-        font-size:20px;
-    }
+    .line{width:35px;}
 
-    .insta-title{
-        font-size:18px;
-    }
-
-    .insta-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .form-control,
-    .form-select{
-        height:45px;
-        font-size:14px;
-    }
-
-    textarea.form-control{
-        height:100px;
-    }
-
-    .send-btn{
+    .phone-circle{
+        width:40px;
+        height:40px;
         font-size:16px;
+    }
+
+    .phone-number{font-size:16px;}
+
+    .contact-btn{
+        font-size:15px;
+        padding:10px 18px;
     }
 }
 /* image parallax cta Section */
@@ -1558,7 +1391,7 @@ textarea.form-control{
     min-height: 60vh; /* better than fixed height */
     padding: 80px 20px;
 
-    background: url('static/image/health-insurance.jpg') center center / cover no-repeat;
+    background: url('health-insurance.jpg') center center / cover no-repeat;
     background-attachment: fixed;
 
     display: flex;
@@ -1569,7 +1402,7 @@ textarea.form-control{
 }
 
 /* Dark overlay */
-.overlays{
+.overlay{
     position: absolute;
     inset: 0;
     background: rgba(0,0,0,0.65);
@@ -1704,347 +1537,290 @@ textarea.form-control{
         font-size: 12px;
     }
 }
-
-
-
-/* Section */
-.team-section{
-    font-family: "Open Sans", sans-serif;
-  background: #eef2f3;
-  padding: 30px 0;
+.footer-section {
+    width: 100%;
+  
+  background: linear-gradient(rgba(6,19,38,0.9), rgba(10,31,56,0.95)),
+              url("health-insurance.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: 50px;
+  position: relative;
 }
 
-/* Small Title */
-.small-title{
-  color: #1b5e4b;
-  font-size: 18px;
+.footer-wrapper {
+  padding-bottom: 20px;
+}
+
+/* Logo */
+.footer-logo {
+      margin-left: 60px;
+  width: 210px;
+  border-radius: 15px;
+}
+
+/* Description */
+.footer-text {
+  color: #cbd5e1;
+  line-height: 2;
+  font-size: 17px;
+}
+
+/* Headings */
+.footer-title {
+  font-size: 26px;
   font-weight: 600;
   position: relative;
-  display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 35px;
 }
 
-/* Line before text */
-.small-title::before{
-  content: "";
-  width: 40px;
-  height: 2px;
-  background: #1b5e4b;
+.footer-title .line {
   position: absolute;
-  left: -50px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.small-title::after{
-  content: "";
-  width: 40px;
-  height: 2px;
-  background: #1b5e4b;
-  position: absolute;
-  right: -50px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-/* Main Title */
-.main-title{
-  font-size: 38px;
-  color: #000;
-  font-weight: 700;
-  margin-bottom: 30px;
+  left: 0;
+  bottom: -12px;
+  width: 75px;
+  height: 4px;
+  background:#174c3c;;
+  overflow: hidden;
 }
 
-/* Cards same as before */
-.team-card{
-  background: #fff;
-  border-radius: 15px;
-  text-align: center;
-  padding: 40px 25px;
-  margin: 15px auto;
-  max-width: 350px;
-  border-top: 5px solid #1b5e4b;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+/* Small moving strip */
+.footer-title .line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;   /* small width */
+  height: 100%;
+  background: #ffffff;
+  animation: slide 2s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 57px;   /* 75 - 18 */
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 22px;
+  font-size: 18px;
+  color: #d1d5db;
+  cursor: pointer;
   transition: 0.3s;
 }
 
-.team-card:hover{
-  transform: translateY(-6px);
+.footer-links li i {
+  margin-right: 14px;
+  font-size: 15px;
+}
+
+.footer-links li:hover {
+  color: #ffffff;
+  padding-left: 6px;
 }
 
 
-.team-img{
-  position: relative;
-  width: 140px;
-  height: 140px;
-  margin: 0 auto 15px;
-}
-
-.team-img img{
-  width: 100%;
-  height: 100%;
-  /* border: 1px solid black; */
-  border-radius: 50%;
-  object-fit: cover;
-}
-.team-img {
+/* Social Icons */
+.social-iconss {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center; /* desktop left */
+  gap: 14px;
+  margin-top: 20px;
 }
-/* .plus-icon{
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 48px;
-  height: 48px;
-  background: #1b5e4b;
+
+.social-iconss a {
+  width: 55px;
+  height: 55px;
+  background: #2b3448;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 20px;
   color: #fff;
-  border-radius: 50%;
+  text-decoration: none;
+}
+
+.social-iconss a i {
+  line-height: 1;
+}
+
+.social-iconss a:hover {
+  background: red;
+}
+/* Contact Section */
+.footer-small {
+  color: #cbd5e1;
+  margin-bottom: 25px;
+  font-size: 17px;
+}
+
+.contact-row {
+  width: 100%;
+  display: flex;
+  align-items: center;     /* important */
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #d1d5db;
+}
+
+.contact-icon {
+  min-width: 45px;         /* FIX */
+  width: 45px;
+  height: 45px;
+  background: #174c3c;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-} */
-
-.team-card h4{
-  font-size: 22px;
-  font-weight: 700;
-  margin-top: 25px;
+  margin-right: 18px;
+  border-radius: 5px;
+  font-size: 18px;
+  flex-shrink: 0;          /* FIX alignment */
 }
 
-.team-card p{
-  color: #000;
+/* Bottom Bar */
+.footer-bottom {
+  background: #1a2232;
+  padding: 22px 0;
   font-size: 16px;
-  font-weight: 700;
+  color: #cbd5e1;
 }
+/* ===============================
+   TABLET (992px se niche)
+=================================*/
+@media (max-width: 991px) {
 
-
-
-
-.stats {
-    font-family: "Open Sans", sans-serif;
-  background-color: #eeeeee;
-  padding: 30px 20px;
-}
-
-.stats__container {
-  width: 85%;
-  margin: 0 auto !important;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.stats__item {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  min-width: 220px;
-  flex: 1 1 250px;
-}
-
-.stats__icon {
-  width: 80px;
-  height: 80px;
-  background-color: #174c3c;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 28px;
-  flex-shrink: 0;
-}
-
-.stats__content h2 {
-  font-size: 40px;
-  margin: 0;
-  color: #0f172a;
-}
-
-.stats__content p {
-  margin: 5px 0 0;
-  font-size: 16px;
-  color: #6b7280;
-}
-
-/* Tablet */
-@media (max-width: 992px) {
-  .stats__container {
-    justify-content: center;
-  }
-
-  .stats__item {
-    flex: 1 1 45%;
-  }
-
-  .stats__content h2 {
-    font-size: 32px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 576px) {
-  .stats {
-    padding: 40px 15px;
-  }
-
-  .stats__container {
-    width: 100%;
-  }
-
-  .stats__item {
-    flex: 1 1 100%;
-    justify-content: flex-start;
-  }
-
-  .stats__icon {
-    width: 60px;
-    height: 60px;
+  .footer-title {
     font-size: 22px;
   }
 
-  .stats__content h2 {
-    font-size: 26px;
+  .footer-text {
+    font-size: 15px;
+    line-height: 1.8;
   }
 
-  .stats__content p {
+  .footer-links li {
+    font-size: 16px;
+  }
+
+  .contact-row {
+    font-size: 16px;
+  }
+
+  .social-icons a {
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+  }
+
+}
+
+
+
+/* ===============================
+   MOBILE (768px se niche)
+=================================*/
+@media (max-width: 767px) {
+  .footer-logo{
+     margin-left: 0px;
+  }
+
+  .footer-section {
+    padding-top: 60px;
+    text-align: center;
+  }
+
+  /* .footer-wrapper {
+    padding-bottom: 40px;
+  } */
+
+  /* Columns full width */
+  .footer-wrapper .col-lg-3,
+  .footer-wrapper .col-md-6 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  /* Heading line center */
+  .footer-title {
+    display: inline-block;
+  }
+
+  .footer-title .line {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Social icons center */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social-icons a {
+    margin: 4px;
+  }
+
+  /* Contact row center align */
+  .contact-row {
+    justify-content: center;
+    text-align: left;
+  }
+
+}
+
+
+/* ===============================
+   SMALL MOBILE (480px se niche)
+=================================*/
+@media (max-width: 480px) {
+
+  .footer-title {
+    font-size: 20px;
+  }
+
+  .footer-text {
     font-size: 14px;
   }
-}
 
+  .footer-links li {
+    font-size: 15px;
+  }
 
- /* CTA below services */
-.service-cta {
-    font-size: 20px;
-    font-weight: 500;
-    color: #333;
-}
-
-.service-cta a {
-    color: #174c3c;
-    font-weight: 600;
-    text-decoration: none;
-    margin-left: 5px;
-    border-bottom: 2px solid #174c3c;
-    transition: 0.3s;
-}
-
-.service-cta a:hover {
-    color: #c40000;
-    border-color: #c40000;
-}
-/* WhatsApp Button */
-.whatsapp-btn{
-    text-decoration: none;
-    position: fixed;
-    bottom: 90px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background: #25D366;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
+  .contact-row {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    z-index: 999;
-    transition: 0.3s;
+    text-align: center;
+  }
+
+  .contact-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+    text-align: center;
+    padding: 18px 10px;
+  }
+
+  .footer-logo{
+    margin-left: 0px;
+  }
+
 }
 
-.whatsapp-btn:hover{
-    transform: scale(1.1);
-}
-
-/* Scroll Top Button */
-.scroll-top{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 55px;
-    height: 55px;
-    background: #0B6A68;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    font-size: 22px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 999;
-    transition: 0.3s;
-}
-
-.scroll-top:hover{
-    background: #e67e00;
-    transform: translateY(-3px);
-}
-/* ===================================
-   RESPONSIVE FLOATING BUTTONS
-=================================== */
-
-/* Tablet */
-@media (max-width: 991px){
-
-    .whatsapp-btn{
-        width: 55px;
-        height: 55px;
-        font-size: 24px;
-        right: 15px;
-        bottom: 80px;
-    }
-
-    .scroll-top{
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
-        right: 15px;
-        bottom: 20px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 768px){
-
-    .whatsapp-btn{
-        width: 50px;
-        height: 50px;
-        font-size: 22px;
-        right: 12px;
-        bottom: 75px;
-    }
-
-    .scroll-top{
-        width: 45px;
-        height: 45px;
-        font-size: 18px;
-        right: 12px;
-        bottom: 15px;
-    }
-}
-
-/* Small Mobile */
-@media (max-width: 480px){
-
-    .whatsapp-btn{
-        width: 45px;
-        height: 45px;
-        font-size: 20px;
-        right: 10px;
-        bottom: 130px;
-    }
-
-    .scroll-top{
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-        right: 10px;
-        bottom: 12px;
-        border-radius: 8px;
-    }
-}
